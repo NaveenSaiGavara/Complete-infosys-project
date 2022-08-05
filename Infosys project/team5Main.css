@@ -1,0 +1,520 @@
+#team5-div1{
+	width: 100%;
+	height: auto;
+
+}
+#progressbar{
+	position: absolute;
+	margin-top: 30px;
+	z-index: 1;
+}
+#team5-div1_1{
+	position: absolute;
+	float: right;
+	right: 0;
+	margin-top: -75px;
+	width: 330px;
+	height: 35px;
+	border: 1px solid rgba(0,0, 0,0.7);
+	border-radius: 4px;
+	border-right: none;
+	padding-left: 20px;
+	padding-top: 10px;
+	background-color: rgba(51, 170, 51, .3);
+	box-shadow: 0px 3px 5px 0px rgba(0,0, 0,0.3);
+}
+#team5-div2{
+	position: absolute;
+	left: 0;
+	right: 0;
+	font-family:sans-serif;
+	width: 100%;
+	background-color: #cfe2f3;
+	height: 80vh;
+	/*margin-top: -20px;*/
+}
+#team5-div2_2{
+	background-color: white;
+	margin-left: 8%;
+	margin-right:8%;
+	width: 86%;
+	height: 240px;
+	padding-left: 20px;
+	/*border: 1px solid;*/
+}
+#team5-div2_3{
+	width: 100%;
+	margin-top: 10px;
+	margin-left: 15px;
+	border: 0.3px dashed rgba(0, 0, 0,0.3);
+	/*border-opacity: 0.5;*/
+	height: 115px;	
+}
+
+/*#team5-div2 #team5-div2_1 p{
+	margin-top: -5px;
+}
+#team5-div2 #team5-div2_1 b{
+	margin-top: -5px;
+}*/
+#team5-div2_1{
+	/*border: 1px solid;*/
+	margin-left: 8%;
+}
+#team5-div2_1>p{
+	padding-top: 0px;
+	/*margin-top: -10px;*/
+}
+#team5-div4{
+	width: 100%;
+	bottom: 0px;
+	position: fixed;
+	height: 56px;
+	background-color:#f2f1f1;
+	margin-left: -10px;
+}
+
+#submit-previous{
+	position: absolute;
+	float: right;
+	right: 53%;
+	margin-top: 30px;
+	padding: 9px 30px;
+	background-color: black;
+	color: white;
+	border-radius: 6px;
+} 
+#submit-previous:hover,#submit-next:hover,#submit:hover{
+	box-shadow: 0px 7px 15px 0px rgba(0,0, 0,0.3);
+}
+#submit-next{
+	position: absolute;
+	float: right;
+	right: 41%;
+	margin-top: 30px;
+	padding: 9px 30px;
+	background-color: black;
+	color: white;
+	border-radius: 6px;
+}
+#submit{
+	position: absolute;
+	float: right;
+	right: 8%;
+	margin-top: 10px;
+	padding: 9px 30px;
+	background-color: black;
+	color: white;
+	border-radius: 5px;
+}
+footer{
+	font-size: 15px;
+	
+}
+#progressbar1{
+	height: 10px;
+	margin-top: -5px;
+	accent-color:darkviolet ;
+	margin-top: 22px;
+	position: absolute;
+	left: 19%;
+	width: 10%;
+}
+#esTime{
+	margin-top: 17px;
+	position: absolute;
+	right:40% ;
+}
+#progress{
+	margin-top: 17px;
+	position: absolute;
+	left: 10%;
+	font-size: 100%;
+}
+#feedback{
+	height: 130px;
+	width: 35px;
+	position: fixed;
+	right: 0px;
+	top: 290px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+/*#feedback img{
+	border-radius: 10px;
+}*/
+
+#feedback1{
+	position: fixed;
+	top: 30px;
+	left: 422px;
+	width: 502px;
+	height: 566px;
+	background-color: white;
+	z-index: 2;
+	/*border-radius: 1px solid;*/
+}
+
+#feedback-div1{
+
+	width: 210px;
+	height: 110px;
+	/*display: inline;*/
+	border: 1px solid rgba(0, 0, 0,0);
+	margin-left: 40px;
+}
+#feedback-div1:hover,#feedback-div2:hover,#feedback-div3:hover{
+	background-color: rgba(56, 0, 100, 0.1);
+	box-shadow: 1px 0px 10px 0px rgba(0,0, 0,0.1);
+}
+#feedback-div2{
+	margin-top: -112px;
+	margin-left: 250px;
+	border: 1px solid rgba(0, 0, 0,0);
+	border-left: 1px solid palevioletred;
+	width: 210px;
+	height: 110px;
+}
+#feedback-div3{
+	margin-left: 50px;
+	margin-top: 25px;
+	border: 1px solid rgba(0, 0, 0,0);
+	width: 410px;
+	height: 160px;
+}
+
+
+
+/*drag and drop*/
+.main{
+position: relative;
+display: flex;
+        }
+.drop-zone {
+    width: 50%;
+    height: 80px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    /*color: #cccccc;*/
+    border: 1px dashed rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.drop-zone--over {
+     border-style: solid;
+}
+
+.drop-zone__input {
+    display: none;
+}
+
+.drop-zone__thumb {
+    width: 100%;
+    height: 100%;
+    /*overflow: hidden;*/
+    background-color: #cccccc;
+    background-size: cover;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.drop-zone__thumb::after {
+    content: attr(data-label);
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top:30px;
+    color: black;
+    background: white;    
+    font-size: 14px;
+    text-align: left;
+}
+.files-area{
+	position: absolute;
+	top: 10px;
+	left: 645px;
+    /*height: 50px;*/
+    height: max-content;
+    width: 40%;
+    padding-top: 10px;
+    margin-left: 30px;
+    display: flex;
+    /*border: 1px solid #000;*/
+}
+.files-area .img{
+    height: 35px;
+    width: 7%;
+	padding-bottom: 5px;
+	margin-left: -20px;
+	/*border-bottom: 1px solid rgba(0, 0, 0, 0.2);*/
+    /*border: 1px solid black;*/
+}
+.files-area .filename{
+	position: relative;
+    height: 70px;
+    width: 88%;
+    margin-top: -10px;
+    /*border: 1px solid black;*/
+}
+#uploaded-files{
+	 /*border: 1px solid;*/
+	 z-index: 1;
+	 width :150px;
+	 height :20px;
+	 position: absolute;
+	 top: -5px;
+	 left: 640px;
+}
+
+#uploaded-after{
+	position: absolute; top: 28px;display: none;z-index: 3;font-size: 14px;
+}
+
+#file-size{
+	top: 8px;font-size: 14px;position: absolute;z-index: 3;right: 30px;opacity: 0.5;
+}
+
+
+
+.drop{
+    display:inline-block;
+    height: 30px;
+    width: 100px;
+    padding-top: 8px;
+    border-radius: 5px;
+    color:black;
+    border: 1px solid;
+    cursor: pointer;
+    /*background-color: skyblue;*/
+}
+#x{
+	font-size: 36px;
+	position: absolute;
+	z-index: 1;
+	display: none;
+	right: 5px;
+	top: -3px;
+	cursor: pointer;
+	opacity: 0.3;
+}
+#x-1{
+	font-size: 20px;
+	font-weight: normal;
+	opacity: 0.3;
+	top: 10px;
+	position: absolute;
+	/*display: none;*/
+	right: 10px;
+	cursor: pointer;
+}
+.transparent5{
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	right: 0;
+	z-index: 1;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+#progressbar{
+	height: 10px;
+	margin-top: -5px;
+	accent-color:darkviolet ;
+	position: absolute;
+	width: 50%;
+	margin-top: 30px;
+	margin-left: 0px;
+	z-index: 1;
+}
+#p_id{
+	margin-top: 6px;
+	padding-top: 10px;
+	font-weight: bold;
+	font-size: 15px;
+}
+#error{
+	margin-left: 8%;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 1200px){
+
+	#feedback{
+		display: none;
+	}
+	#submit-previous{
+		padding: 5px 15px;
+		width: 150px;
+		right: 40%;
+	}
+
+	#submit-next{
+		padding: 5px 15px;
+		bottom: 23%;
+		right: 43%;
+	}
+		#team5-div2{
+		width: 100%;
+	}
+	#error{
+		margin-left: 10px;
+	}
+	#team5-div2_1{
+		margin-left: 10px;
+	}
+	#team5-div2_2{
+		margin-left: 10px;
+		/*width: 1000px;*/
+		height: 370px;
+	}
+	#p_id{
+		text-indent: 15px;
+		font-size: 14px;	
+	}
+	.drop-zone {
+		width: 90%;
+		margin-right: 15px;
+		display: block;
+	}
+	#uploaded-files{
+		left: 20px;
+	 	top: 150px;
+
+	}
+	.files-area{
+		/*border: 1px solid;*/
+		width: 400px;
+		top: 170px;
+		left: 20px;
+		margin-left: 0px;
+	}
+	.filename{
+		margin-top: -5px;
+		height: 50px;
+    	width: 600px;
+    	margin-left: 10px;
+    	position: absolute;
+	}
+	#uploaded-after{
+	position: absolute; top: 28px;display: none;z-index: 3;font-size: 14px;
+}
+
+#file-size{
+	top: 8px;font-size: 14px;position: absolute;z-index: 3;right: -10px;opacity: 0.5;
+}
+#progress{
+	left: 5%;
+}
+#x{
+	right: -30px;
+
+}
+#team5-div2_2{
+	margin-left: 2%;
+		width: 87%;
+	}
+	#team5-div2{
+		height:120%;
+	}
+}
+@media only screen and (min-width: 500px) and (max-width: 900px){
+
+	#team5-div2_2{
+	margin-left: 2%;
+		width: 86%;
+	}
+	#progress{
+		font-size: 14px;
+	}
+	#submit{
+		right: 10px;
+	}
+	#esTime{
+		font-size: 14px;
+		right: 35%;
+	}
+	#progressbar1{
+		top: 20px;
+		left: 30px;
+		width: 100px;
+	}
+	
+
+}
+
+/*for height*/
+
+@media screen and (max-width: 500px) and (min-width: 200px){
+
+	.files-area{
+    width: 100%;
+    height: 60px;
+    padding-top: 10px;
+    margin-left: 30px;
+}
+
+
+#submit-next{
+		bottom: 16%;
+	}
+
+.files-area .filename{
+    height: 60px;
+    width: 60%;
+    margin-top: -10px;
+}
+#team5-div2_2{
+	height: 420px;
+}
+#x{
+	font-size: 36px;
+	position: absolute;
+	z-index: 1;
+	display: none;
+	right: -26px;
+	top: -20px;
+	cursor: pointer;
+	opacity: 0.3;
+}
+#file-size{
+	top: -8px;font-size: 14px;
+	margin-right: 3px;
+}
+#progressbar{
+	margin-top: 43px;
+}
+#uploaded-after{
+	top: 38px;
+}
+
+#progressbar1{
+	margin-top: 14px;
+	left: 36%;
+	width: 50%;
+	margin-left: 10px;
+}
+
+#esTime{
+	margin-top: 38px;
+	left: 25px;
+}
+
+#submit{
+	right: 45px;
+	margin-top: 27px;
+	padding: 5px 15px;
+}
+
+#progress{
+	margin-top: 10px;
+	margin-left: 0px;
+}
+}

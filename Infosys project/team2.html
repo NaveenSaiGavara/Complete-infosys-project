@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" href="team2.css">
+      
+    </head>
+    <body>
+      <header>
+            <article>
+                <h1>infosys</h1>
+                <p>Navigate your next</p>
+            </article>
+      </header>
+      <main>
+      <section>
+            <article>
+                <p style="font-family:sans-serif;font-size:22px;font-weight:normal;">infosys limited recuritment</p>
+                <address style="text-transform:capitalize;font-style: normal;">electronics city, hosur road,bangalore -560100, India</address>
+                <h3>APPLICATION FOR EMPLOYMENT </h3>
+                <p style="text-transform: uppercase;">education</p>
+            </article>
+            
+      </section>
+      <section id="par">
+        <p>All <b>percentages/CGPA</b> should be simple average of all your subjects/semesters/years, including electives, optional subjects, additional subjects, practicals, and languages </p>
+      </section>
+      <form action="team3.html" method="get"onsubmit="return check()">
+        <section>
+			<p><b>1</b>. X/SSLC/Junior/Equivalent</p>
+            <section>
+                
+                <p>Degree</p>
+               <div class="ask"> <span class="btn"><input  
+                onclick="vis(this)" 
+                type="radio" name="school" 
+                value="sccert"id="school"><b>&#x2713</b></span>
+                <label for="school">secondary school leaving Cert</label></div>
+                <div class="ask"><span class="btn"><input onclick="vis(this)" class="spec" type="radio" name="school"
+                    value="none" id="other"><b >&#x2713</b></span>
+                <label for="other">other</label></div>
+            </section>
+            <p><b>X</b>This Field Isrequired</p>
+             <section id="othern1">
+            
+                <div><span><input placeholder="please specify"  onfocusout="gay3(this)"type="text" name="jn1" placeholder=""><b>*</b></span></div>       
+            </section>
+            <p><b>X</b>Do provide an input for Others</p>
+            <section style="margin-bottom:15px;">
+                <p>school</p>
+                <p style="font-size:12px;font-weight:normal;">Please do not key in any personally identifiable information belonging to you or any other person(s) which is unrelated to the business purpose of this survey</p>
+                
+               <div><span> <input onfocusout="gay3(this)"  type="text" id="school2" name="school2"><b>*</b></span></div>
+            </section>
+            <p><b>X</b>This Field Isrequired</p>
+            <section> 
+                <p>board</p>
+                <div><span>
+                <select onfocusout="gay3(this)"  name="board" id="board">
+                    <option name="board" value="none"></option>
+                    <option name="board" value="cbse">cbse</option>
+                    <option name="board"value="state">state</option>
+                </select>  
+                <b>*</b></span></div>              
+            </section>
+            <p><b>X</b>This Field Isrequired</p>
+            <section>
+                <p>specialization</p>
+                <div><span>
+                <select onfocusout="gay3(this)"  name="specializationx6" id="specializationx6">
+					<option value="none"></option>
+                    <option value="cbse">cbse</option>
+                    <option value="state">state</option>
+                </select>  
+                <b>*</b></span></div>              
+            </section>
+            <p><b>X</b>This Field Isrequired</p>
+            <section>
+                <p>country</p>
+                <div><span>
+                <select onfocusout="gay3(this)"  name="country" id="country">
+					<option value="none"></option>
+                    <option value="india">india</option>
+                    <option value="usa">america</option>
+                </select>  
+                <b>*</b></span></div>              
+            </section>
+            <p><b>X</b>This Field Isrequired</p>
+			<section>
+                <p>state</p>
+                <div><span>
+                <select onfocusout="gay3(this)"  name="state" id="state">
+					<option value="none"></option>
+                    <option value="ap">ap</option>
+                    <option value="bihar">bihar</option>
+                </select>                
+                <b>*</b></span></div>
+            </section>
+            <p><b>X</b>This Field Isrequired</p>
+			<section>
+                <p>Simple Average percentage/CGPA/Grade for all semesters/years</p>
+               <div><span><input onfocusout="gay3(this)"  type="number" name="cgpa1" id="cgpa1"><b>*</b></span></div>          
+                
+            </section>
+            <p><b>X</b>This Field Isrequired</p>
+			<section>
+                <p>Passing month and year</p>
+                <div><span><input onfocusout="gay3(this)"  type="date" name="pass1" placeholder="Date *" id="pass1"><b>*</b></span></div>          
+                
+            </section>
+            <p><b>X</b>Please select a Date/Time that is in MM/DD/YYYY/hh:mm A format</p>
+        </section>
+		<section>
+			<p>2.Please provide either Class XII or Diploma details. </p>
+            <section>
+               <div class="ask"><span class="btn"> <input onfocusout="gay3(this)"type="checkbox"
+                 onclick="vis(this)" name="inter0" value="12th"id="inter0"><b >&#x2713</b></span>
+                <label for="inter0">XII standard</label></div>
+               <div class="ask"><span class="btn"><input onfocusout="gay3(this)"  type="checkbox"
+                 onclick="vis(this)" name="inter0"value="diploma" id="diploma"><b >&#x2713</b></span>
+                <label for="diploma">Diploma</label></div>
+            </section>
+            <p><b>X</b>This Field Isrequired</p>
+		</section>
+        <section id="ask2">
+			<p><b>3</b>. XII Standary</p>
+            <section>
+                
+                <p>Degree</p>
+               <div class="ask"> <span class="btn"><input type="radio" onclick="vis(this)
+                "name="schoolx2" value="pre"id="schoolx2"><b>&#x2713</b></span>
+                <label for="schoolx2">Pre-University Course</label></div>
+                <div class="ask"><span class="btn"><input type="radio" onclick="vis(this) "name="schoolx2"value="hssc" id="hssc"><b>&#x2713</b></span>
+                <label for="hssc">Higher Secondary School certificate</label></div>
+                <div class="ask"><span class="btn"><input type="radio" onclick="vis(this) "name="schoolx2"value="none" id="otherx2"><b>&#x2713</b></span>
+                <label for="otherx2">others</label></div>
+            </section>
+            <p><b>X</b>This Field Isrequired</p>
+            <section id="othern2">
+            
+                <div><span><input placeholder="please specify*"  value="some"onfocusout="gay3(this)"
+                    type="text" name="jn2" placeholder="" id="schoolx8"><b>*</b></span></div>       
+            </section>
+            <p><b>X</b>This Field Isrequired</p>
+            <section style="margin-bottom:15px;">
+                <p>school</p>
+                <p style="font-size:12px;font-weight:normal;">Please do not key in any personally identifiable information belonging to you or any other person(s) which is unrelated to the business purpose of this survey</p>
+                
+               <div><span> <input onfocusout="gay3(this)"type="text" name="schoolx4" id="schoolx4"><b>*</b></span></div>
+            </section>
+            <p><b>X</b>This Field Isrequired</p>
+            <section>
+                <p>board</p>
+                <div><span>
+                <select onfocusout="gay3(this)"  name="boardx2" id="boardx2">
+                    <option value="none"></option>
+                    <option name="boardx2" value="cbse">cbse</option>
+                    <option name="boardx2"value="state">state</option>
+                </select>  
+                <b>*</b></span></div>              
+            </section>
+            <p><b>X</b>This Field Isrequired</p>
+            <section>
+                <p>Branch/Stream/Area Of specialization</p>
+                <div><span>
+                <select onfocusout="gay3(this)"  name="specializationx2" id="specializationx2">
+					<option value="none"></option>
+                    <option value="cbse">cbse</option>
+                    <option value="state">state</option>
+                </select>  
+                <b>*</b></span></div>              
+            </section>
+            <p><b>X</b>This Field Isrequired</p>
+            <section>
+                <p>country</p>
+                <div><span>
+                <select onfocusout="gay3(this)"  name="countryx2" id="countryx2">
+					<option value="none"></option>
+                    <option value="india">india</option>
+                    <option value="usa">america</option>
+                </select>  
+                <b>*</b></span></div>              
+            </section>
+            <p><b>X</b>This Field Isrequired</p>
+			<section>
+                <p>state</p>
+                <div><span>
+                <select onfocusout="gay3(this)"  name="statex2" id="statex2">
+					<option value="none"></option>
+                    <option value="ap">ap</option>
+                    <option value="bihar">bihar</option>
+                </select>                
+                <b>*</b></span></div>
+            </section>
+            <p><b>X</b>This Field Isrequired</p>
+			<section>
+                <p>Simple Average percentage/CGPA/Grade for all semesters/years</p>
+               <div><span><input onfocusout="gay3(this)"type="number" name="cgpax2" id="cgpax2"><b>*</b></span></div>          
+                
+            </section>
+            <p><b>X</b>This Field Isrequired</p>
+			<section>
+                <p>Passing month and year</p>
+                <div><span><input onfocusout="gay3(this)"  type="date" name="passx2" placeholder="Date *"><b>*</b></span></div>          
+                
+            </section>
+            <p><b>X</b>Please select a Date/Time that is in MM/DD/YYYY/hh:mm A format</p>
+        </section>
+
+
+
+        <section id="ask3">
+			<p><b>3</b>. Diploma</p>
+            <section>
+                
+                <p>Degree</p>
+               <div class="ask"> <span class="btn"><input type="radio"  onclick="vis(this)" name="schoolx3" value="pre" id="schoolx3"><b>&#x2713</b></span>
+                <label for="schoolx3">Diploma</label></div>
+                
+                <div class="ask"><span class="btn"><input type="radio" onclick="vis(this)" name="schoolx3"value="none" id="otherx3"><b>&#x2713</b></span>
+                <label for="otherx3">others</label></div>
+            </section>
+            <p><b>X</b>This Field Isrequired</p>
+            <section id="othern3">
+            
+                <div><span><input placeholder="please specify*" onfocusout="gay3(this)"
+                    type="text"  name="jn3"><b>*</b></span></div>       
+            </section>
+            <p><b>X</b>Do provide an input for Others</p>
+            <section style="margin-bottom:15px;">
+                <p>school</p>
+                <p style="font-size:12px;font-weight:normal;">Please do not key in any personally identifiable information belonging to you or any other person(s) which is unrelated to the business purpose of this survey</p>
+                
+               <div><span> <input onfocusout="gay3(this)"   type="text" name="schoolx31"><b>*</b></span></div>
+            </section>
+            <p><b>X</b>This Field Isrequired</p>
+            <section>
+                <p>board</p>
+                <div><span>
+                <select onfocusout="gay3(this)"  name="boardx3" id="boardx3">
+                    <option value="none"></option>
+                    <option name="boardx3" value="cbse">cbse</option>
+                    <option name="boardx3"value="state">state</option>
+                </select>  
+                <b>*</b></span></div>              
+            </section>
+            <p><b>X</b>This Field Isrequired</p>
+            <section>
+                <p>Branch/Stream/Area Of Specialization</p>
+                <div><span>
+                <select onfocusout="gay3(this)"  name="specializationx3" id="specializationx3">
+					<option value="none"></option>
+                    <option value="cbse">cbse</option>
+                    <option value="state">state</option>
+                </select>  
+                <b>*</b></span></div>              
+            </section>
+            <p><b>X</b>This Field Isrequired</p>
+            <section>
+                <p>country</p>
+                <div><span>
+                <select onfocusout="gay3(this)"  name="countryx3" id="countryx3">
+					<option value="none"></option>
+                    <option value="india">india</option>
+                    <option value="usa">america</option>
+                </select>  
+                <b>*</b></span></div>              
+            </section>
+            <p><b>X</b>This Field Isrequired</p>
+			<section>
+                <p>state</p>
+                <div><span>
+                <select onfocusout="gay3(this)"  name="statex3" id="statex3">
+					<option value="none"></option>
+                    <option value="ap">ap</option>
+                    <option value="bihar">bihar</option>
+                </select>                
+                <b>*</b></span></div>
+            </section>
+            <p><b>X</b>This Field Isrequired</p>
+			<section>
+                <p>Simple Average percentage/CGPA/Grade for all semesters/years</p>
+               <div><span><input onfocusout="gay3(this)"type="number"  name="cgpax3"><b>*</b></span></div>          
+                
+            </section>
+            <p><b>X</b>This Field Isrequired</p>
+			<section>
+                <p>Passing month and year</p>
+                <div><span><input onfocusout="gay3(this)"type="date"  name="passx3" placeholder="Date *"><b>*</b></span></div>          
+                
+            </section>
+            <p><b>X</b>Please select a Date/Time that is in MM/DD/YYYY/hh:mm A format</p>
+        </section>
+
+
+
+
+
+
+
+        
+		<section>
+			<p><b>3</b>. Graduation</p>
+			<section>
+                <p>degree</p>
+                <div><span>
+                <select onfocusout="gay3(this)"  name="degree3" id="degree3">
+                    <option value="none"></option>
+                    <option  value="cse">rcomputers</option>
+                    <option value="mech">mech</option>
+                </select> 
+                <b>*</b></span></div>               
+                
+            </section>
+            <p><b>X</b>This Field Isrequired</p>
+			<section>
+                <p>institute</p>
+                <div><span>
+                <select onfocusout="gay3(this)"  name="institute3" id="institute3">
+                    <option value="none"></option>
+                    <option  value="rguktnzd">rajiv gandhi nzd</option>
+                    <option value="iitkgp">iit kargapur</option>
+                </select> 
+                <b>*</b></span></div>               
+            </section>
+            <p><b>X</b>This Field Isrequired</p>
+            <section>
+                <p>university</p>
+                <div><span>
+                <select onfocusout="gay3(this)"  name="university3" id="university3">
+                    <option value="none"></option>
+                    <option  value="rgukt">rajiv gandhi</option>
+                    <option value="iit">iit</option>
+                </select> 
+                <b>*</b></span></div>               
+            </section>
+            <p><b>X</b>This Field Isrequired</p>
+            <section>
+                <p>country</p>
+                <div><span>
+                <select onfocusout="gay3(this)"  name="country3" id="country3">
+					<option value="none"></option>
+                    <option value="india">india</option>
+                    <option value="usa">america</option>
+                </select> 
+                <b>*</b></span></div>               
+                
+            </section>
+            <p><b>X</b>This Field Isrequired</p>
+			<section>
+                <p>state</p>
+                <div><span>
+                <select onfocusout="gay3(this)"  name="state3" id="state3">
+					<option value="none"></option>
+                    <option value="ap">ap</option>
+                    <option value="bihar">bihar</option>
+                </select> 
+                <b>*</b></span></div>               
+            </section>
+            <p><b>X</b>This Field Isrequired</p>
+			<section>
+                <p>Branch/Stream/Area Of specialization</p>
+                <div><span>
+                <select onfocusout="gay3(this)"  name="specializationx4" id="specializationx4">
+					<option value="none"></option>
+                    <option value="cbse">cbse</option>
+                    <option value="state">state</option>
+                </select>                
+                <b>*</b></span></div>
+            </section>
+            <p><b>X</b>This Field Isrequired</p>
+			<section>
+                <p>Simple Average percentage/CGPA/Grade for all semesters/years</p>
+                <div><span><input onfocusout="gay3(this)"type="number"  name="cgpa3"><b>*</b></span></div>          
+                
+            </section>
+            <p><b>X</b>This Field Isrequired</p>
+			<section>
+                <p>Passing month and year</p>
+                <div><span><input onfocusout="gay3(this)"type="date" 
+                    name="pass3" placeholder="Date *"><b>*</b></span></div>
+            </section>
+            <p><b>X</b>Please select a Date/Time that is in MM/DD/YYYY/hh:mm A format</p>
+        </section>
+		<section>
+			<p><b>4</b>. post Graduation (optional)</p>
+			<section>
+                <p>degree (optional)</p>
+                <div><span>
+                <select onfocusout="gay3(this)"  name="degree4" id="degree4">
+                    <option value="none"></option>
+                    <option  value="cse">rcomputers</option>
+                    <option value="mech">mech</option>
+                </select> 
+                <b>*</b></span></div>               
+            </section>
+			<section>
+                <p>institute (optional)</p>
+                <div><span>
+                <select onfocusout="gay3(this)"  name="institute4" id="institute4">
+                    <option value="none"></option>
+                    <option  value="rguktnzd">rajiv gandhi nzd</option>
+                    <option value="iitkgp">iit kargapur</option>
+                </select> 
+                <b>*</b></span></div>               
+                
+            </section>
+            <section>
+                <p>university (optional)</p>
+                <div><span>
+                <select onfocusout="gay3(this)"  name="university4" id="university4">
+                    <option value="none"></option>
+                    <option  value="rgukt">rajiv gandhi</option>
+                    <option value="iit">iit</option>
+                </select>                
+                <b>*</b></span></div>
+            </section>
+            <section>
+                <p>country (optional)</p>
+                <div><span>
+                <select onfocusout="gay3(this)"  name="country4" id="country4">
+					<option value="none"></option>
+                    <option value="india">india</option>
+                    <option value="usa">america</option>
+                </select>                
+                <b>*</b></span></div>
+            </section>
+			<section>
+                <p>state (optional)</p>
+               <div><span> <select onfocusout="gay3(this)"  name="state4" id="state4">
+					<option value="none"></option>
+                    <option value="ap">ap</option>
+                    <option value="bihar">bihar</option>
+                </select><b>*</b>  </span></div>              
+            </section>
+			<section>
+                <p>specialization (optional)</p>
+                <div><span>
+                <select onfocusout="gay3(this)"  name="specializationx5" id="specializationx5">
+					<option value="none"></option>
+                    <option value="cbse">cbse</option>
+                    <option value="state">state</option>
+                </select> 
+                <b>*</b></span></div>               
+                
+            </section>
+
+			<section>
+                <p>Simple Average percentage/CGPA/Grade for all semesters/years (optional)</p>
+                <div><span><input onfocusout="gay3(this)"  type="number" name="cgpa4"><b>*</b></span></div>          
+                
+            </section>
+			<section>
+                <p>Passing month and year (optional)</p>
+                <div><span><input onfocusout="gay3(this)"type="date"  name="pass4" placeholder="Date *"><b>*</b></span></div>  
+                
+            </section>
+        </section>
+        
+		<section id="jahn1">
+			<p><b>6</b>. active backlogs</p>
+			<section>
+                <p>I.Do you have active backlogs ?</p>
+                <button onclick="return btns(this)" id="btn1"><b>&#x2713</b>yes</button>     
+                <button onclick="return btns(this)" id="btn2"><b>X</b>no</button>          
+                
+            </section>
+            <section id="back1">
+                <p><b>II.</b>Number of active backlogs</p>
+                <div><span><input onfocusout="gay3(this)"type="text"  
+                    name="backlog1" id="backlog1" placeholder=""><b>*</b></span></div>          
+                
+            </section>
+            <p><b>X</b>This Field Isrequired</p>
+		</section>
+		<section id="jahn2">
+			<p><b>7</b>Gaps in education</p>
+			<section>
+                <p>I.Do you have gaps in education ?</p>
+                <button onclick="return btns(this)" id="btn3"><b>&#x2713</b>yes</button> 
+
+                <button onclick="return btns(this)" id="btn4"><b>X</b>no</button>   
+                
+            </section>
+            <section id="back2">
+                <p><b>II</b>Gaps in education in months</p>
+                <div><span><input onfocusout="gay3(this)" type="number" name="backlog2" id="backlog2" placeholder=""><b>*</b></span></div>       
+            </section>
+            <p><b>X</b>This Field Isrequired</p>
+            <section id="back2">
+                <p><b>III</b>Reason for gaps in education</p>
+                <p style="font-size:12px;font-weight:normal;">Please do not key in any personally identifiable information belonging to you or any other person(s) which is unrelated to the business purpose of this survey</p>
+                <div><span><input onfocusout="gay3(this)"type="text"  name="backlogs" placeholder=""><b>*</b></span></div>       
+            </section>
+            <p><b>X</b>This Field Isrequired</p>
+           
+		</section>
+        
+		<article id="arti">
+		<a href="team_one.html"><input style="width:200px;"type="button" value="previous page"></a>
+		<a href="team3.html"><input type="submit" id="submit"value="next page"></a>
+		</article>
+       
+      </form>
+      <section id="error">
+        <b  class="linker">
+          <section>Questions</section>
+          <section>error</section>
+          <section>action</section>
+        </b>
+       
+       
+        
+                 
+      
+         </table>
+      </section>
+    </main>
+	<footer>
+		<section>
+			<label id="questions"><b>14 of 97 answered</b></label>
+			<div class="container" style="display:inline-blockS;width:160px;">
+                  <div id="myBar" class="green" 
+                  style="border-radius:10px;height:4px;width:14%"></div>
+              </div>
+		</section>
+		<section>
+			<b>estimated time : 29 minutes</b>
+			
+		</section>
+		<section>
+			
+			<a href="team3.html">
+				<input type="submit" onclick="document.getElementById('submit').click();return false;" value="next page">
+			</a>
+		</section>
+	</footer>
+    <div id="bg" onclick="jahnagi()"style=" width:100%;
+    box-sizing: border-box;
+    position: fixed;
+    top:0;
+   height: 100%;
+    display: none;
+    background-color: black;
+    opacity: 0.5;"></div>
+    <div id="fix"  style=" cursor:pointer;position: fixed;
+   
+    writing-mode: sideways-lr;
+    text-transform: uppercase;
+  height: 150px;
+width:10px;
+   text-align: center;
+    bottom:20%;
+    transform: translateY(-50%);
+   margin:0;
+   
+    color:white;
+    padding:10px;
+    border-radius: 10px;
+    background-color:#287ac8 ;
+    right: 0;"onclick="displ(this)" >f<br>e<br>e<br>d<br>b<br>a<br>c<br>k</div>
+   
+    <section id="feed" style=" position: fixed;
+    width:650px;
+    height: 650px;
+    top:5%;
+    box-shadow: 1px 1px 2px gray,-1px -1px 2px gray;
+   border-radius:15px;
+    left:50%;
+    display:none ;
+    background-color: white;
+    transform: translateX(-50%);
+    margin:auto;
+   ">
+    <nav style="position:sticky;top:0;font-size:25px"><b style="cursor:pointer;padding-right:15px;float:right; right: 0;position: fixed;font-size:35px;" onclick="jahnagi()">&times</b></nav>
+        <section style="margin-top:40px">
+            <img src="a.jpg" style="display:block;margin:auto;"width="150px" height="" alt="">
+            <h2 style="text-align:center;font-weight:bold;font-family:sans-serif;">Infosys surveys Feedback</h2>
+        </section>
+        <section style="width:80%;margin:auto;display:flex;justify-content:space-around;border:2px solid black;border-width:0 0 2px 0;">
+            <a style="text-decoration:none;color:black" id="sam"href="#id"onclick="disp(this)">
+                   <article style="margin-bottom:20px" >
+                        <img src="b.jpg"style="padding:15px;border:2px solid black;border-width:0 2px 0px 0;" width="150px"alt="">
+                        <p style="margin:0;text-align:center;padding:0;"><b>Bug Report</b></p>
+                    </article>
+            </a>
+            <a style="text-decoration:none;color:black" href="#id"onclick="disp(this)"> 
+            <article>
+
+            
+                <img src="d.jpg" width="200px"alt="">
+                <p style="margin:15px;text-align:center;padding:0;"><b>Feature Request</b></p></article>
+            </article></a>
+        </section>
+        <section style="border:2px solid black;border-width:0 0 2px 0;width:80%;margin:auto;">
+            <a href="#id" style="text-decoration:none;color:black" onclick="disp(this)">  <article style="display:inline-block;margin-bottom:20px" ><img src="e.jpg"style="display:block;padding-top:15px;" width="250px" height="150px"alt=""></article></a>
+            <b style="position:absolute;top:75%;">General feedback</b>
+        </section>
+    </section>
+    <section id="feed2" style="overflow:scroll;overflow-x:hidden; position: fixed;
+    width:650px;
+    display: none;
+    height: 650px;
+    top:5%;
+    left:50%;
+    background-color: white;
+    transform: translateX(-50%);
+    margin:auto;
+    box-shadow: 1px 1px 2px gray,-1px -1px 2px gray;
+   border-radius:15px;">
+        
+        <nav style="position:sticky;top:0;font-size:25px"><b style="cursor:pointer;position:relative;left:0;" onclick="jahnag(this)">&#8592</b><b style="cursor:pointer;padding-right:15px;float:right;font-size:35px;" onclick="jahnagi()">&times</b></nav>
+        <form action="feedback.php">
+        <section style="margin-top:40px;box-shadow: 0 0 0;">
+            <img src="a.jpg" style="display:block;margin:auto;"width="150px" height="" alt="">
+            <h2 style="text-align:center;font-weight:bold;font-family:sans-serif;">Infosys surveys Feedback</h2>
+        </section>
+        <article style="width:85%;margin:auto;">
+            <b>1.Rate your experience</b>
+            <p style="font-size:35px;padding:0;margin:0;">
+                <b onclick="purp(this)">&#x2606</b>
+               <b onclick="purp(this)">&#x2606</b>
+               <b onclick="purp(this)">&#x2606</b>
+               <b onclick="purp(this)">&#x2606</b>
+               <b onclick="purp(this)">&#x2606</b>
+            </p>
+        </article>
+        <article style="width:85%;margin:auto;margin-top:25px;">
+            <b>2.Your email address</b>
+            <p style="font-family:sans-serif;font-size:14px;width:80%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et soluta enim dolor sunt excepturi ab possimus adipisci consequuntur quidem reiciendis.</p>
+            <input style="display: block;
+            margin:auto;
+            width:95%;
+            color:black;
+            border-radius: 0;
+            text-align: left;
+            outline:none;
+            height: 30px;
+            border-width:0 0 2px 0;
+            border-color: black;
+            box-sizing: border-box;
+            background-color: white;"type="text" name="feed">
+        </article>
+        <article style="width:85%;margin:auto;margin-top:25px;">
+            <b>3.leave us a comment</b>
+            <p style="font-family:sans-serif;font-size:14px;width:80%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et soluta enim dolor sunt excepturi ab possimus adipisci consequuntur quidem reiciendis.</p>
+            <input  style="display: block;
+            margin:auto;
+            width:95%;
+            color:black;
+            border-radius: 0;
+            text-align: left;
+            outline:none;
+            height: 30px;
+            border-width:0 0 2px 0;
+            border-color: black;
+            box-sizing: border-box;
+            background-color: white;" type="text" name="feed">
+        </article>
+       <article style="width:85%;margin:auto;margin-top:15px;display:flex;justify-content:space-around;">
+           <a href="#id" style="text-decoration:none;color:black;"> <section>screesnshot</section></a>
+            <section>|</section>
+            <a href="#id" style="text-decoration:none;color:black;"> <section>video</section></a>
+           
+       </article>
+       <article style="width:85%;margin:auto;" >
+       <input type="submit" style="padding:10px;
+       width:200px;
+       margin:auto;
+       margin-top:15px;
+       margin-bottom:15px;
+       display: block;
+       text-transform: uppercase;
+       text-align: center;
+       background-color: black;
+       color:white;
+       border-radius: 15px!important;
+       font-weight: bold;"value="send feedback">
+       </form>
+    </article>
+    </section>
+    <script type="text/javascript">
+        function purp(a){
+            if (!a.hasAttribute("class")){
+                a.style.color="#8029c1";
+                
+                a.setAttribute("class","jahnagi");
+            }
+            else{
+                a.style.color="black";
+                a.removeAttribute("class");
+
+            }
+            
+        }
+        function disp(a){
+            if (!a.hasAttribute("class")){
+               
+                document.getElementById("feed2").style.display="block";
+                a.setAttribute("class","jahnag");
+                a.parentElement.parentElement.style.display="none";
+               
+            }
+            else{
+                document.getElementById("feed2").style.display="none";
+
+                a.removeAttribute("class");
+
+            }
+        }
+        function jahnag(a){
+            if (!a.hasAttribute("class")){
+               
+               document.getElementById("feed").style.display="block";
+               a.setAttribute("class","jahnag");
+               a.parentElement.parentElement.style.display="none";
+  
+           }
+           else{
+               document.getElementById("feed").style.display="none";
+
+               a.removeAttribute("class");
+
+           }
+
+        }
+        function displ(a){
+            if (!a.hasAttribute("class")){
+                a.setAttribute("class","jahnag");
+                document.getElementById("feed").style.display="block";
+
+                document.getElementById("bg").style.display="block";
+                
+
+            }
+            else{
+
+                a.removeAttribute("class");
+                document.getElementById("bg").style.display="none";
+
+                document.getElementById("feed").style.display="none";
+            }
+        }
+        function jahnagi(){
+            document.getElementById("feed").style.display="none";
+            document.getElementById("feed2").style.display="none";
+            document.getElementById("bg").style.display="none";
+
+
+        }
+    </script>
+    <script  src="team2.js"></script>
+    </body>
+</html>

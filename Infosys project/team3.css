@@ -1,0 +1,181 @@
+
+
+button{  
+            border-radius: 20px;
+            background-color: white;
+            border: 1px solid rgb(200, 200, 200);
+            width:85px;
+            box-shadow: 1px 1.2px rgba(200, 200, 200,.5) ;
+            margin-bottom: 5px;
+            justify-content: center;
+            padding: 5px;
+            margin-top: 0;
+            align-content: space-around;
+            font-size: 15px;
+            align-items: center;
+}
+
+.first,.second,.third,.fourth
+{
+        display:flex;
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgb(200, 200, 200);
+}
+          
+.container
+{
+        /* border: 1px solid rgb(200, 200, 200); */
+        border-radius: 5px;
+        background-color: white;
+        height: 100%;
+        padding-left: 10px;
+        padding-right: 10pz;
+        font-size: 20px;
+        width: 93%;
+}
+.btns button
+{
+        font-size: 15px;
+        text-align: left;
+}
+.box img
+{
+        width: fit-content;
+}
+.k input
+{
+        border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+::-webkit-calendar-picker-indicator 
+{
+        filter: rgb(255, 12, 53);
+}
+
+.k label
+{
+font-size: small;
+        margin-left: 10px;
+}
+.ab input
+{
+        border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+            
+.ab label
+{
+        font-size: small;
+        margin-left: 10px;
+}
+input:hover
+{
+        background-color:rgb(225, 151, 225);
+                 
+}
+.head
+{
+        border-bottom: 2px solid rgb(200, 200, 200);
+}
+            
+            
+#f
+{
+        margin-left: 0px;
+}
+#t
+{
+        margin-left: 60px;
+}
+input
+{
+        border: none;
+        padding: 10px;
+        width: 300px;
+                
+        border-bottom: 2px solid rgb(50, 46, 46);
+        margin-bottom: 10px;
+}
+          
+button:hover
+{
+        background-color: rgb(207, 149, 210);
+}
+.tick
+{
+        height: 5px;
+        width: 5px;
+}
+#s
+{
+        margin-left: 70px;
+}
+                 
+.k
+{
+        display:none;
+}
+.ab
+{
+        display: none;
+}
+.blocks
+{
+        display: none;
+            }
+
+#team3_footer{
+    width: 100%;
+    bottom: 0px;
+    position: fixed;
+    height: 56px;
+    background-color:#f2f1f1;
+    margin-left: -10px;
+}
+
+
+footer{
+    font-size: 15px;
+    
+}
+progress{
+    height: 10px;
+    margin-top: -5px;
+    accent-color:darkviolet ;
+    margin-top: 22px;
+    position: absolute;
+    left: 257px;
+}
+
+
+
+#esTime{
+    margin-top: 17px;
+    position: absolute;
+    right:550px ;
+}
+#progress{
+    margin-top: 17px;
+    position: absolute;
+    left: 140px;
+}
+
+
+/*#fix{
+    position: fixed;
+    writing-mode: vertical-rl;
+    text-transform: uppercase;
+   height:150px;
+   text-align: center;
+    top:50%;
+    color:white;
+    padding:2px;
+    border-radius: 10px;
+    background-color:#287ac8 ;
+    right:0;
+}*/
+a{
+   color:white; 
+   background-color: black;
+   text-decoration: none;    
+}

@@ -1,0 +1,318 @@
+@media screen and (max-width:810px){
+   .ask{
+    display:inline-block;
+    
+   }
+   #feed,#feed2{
+    
+    width: 95% !important;;
+   
+   
+    }
+   
+   
+}
+
+input:hover,select:hover{
+    border-color:#5e1f89!important;
+}
+.green{color: white;
+    background-color:rgb(134, 38, 195)}
+#othern1,#othern2,#othern3{
+    display: none;
+}
+div.ask{
+    display: inline-block;
+ 
+}
+form>section>section+p>b{
+    border:2px solid red;
+    border-radius:50%;
+    width:15px;
+    height: 15px;
+    color:white;
+    background-color: red;
+   
+    text-align: center;
+    line-height: 15px;  
+  
+   
+    display: inline-block;
+
+}
+form>section>section+p{
+    text-transform: capitalize;
+    color:red;
+    display: none;
+}
+
+button b{
+    border:2px solid black;
+    border-radius: 50%;
+    width:15px;
+    height: 15px;
+    display: inline-block;
+    line-height: 15px;
+    
+    padding:0;
+    margin-right:5px;
+}
+html{
+ 
+    /* margin:auto;
+   overflow-x: hidden; */
+    background-color: #cfe2f3;
+   
+}
+input[type="text"],select,input[type="range"],input[type="number"],input[type="date"]{
+    display: block;
+    margin:auto;
+    width:95%;
+    outline:none;
+    height: 30px;
+    border-width:0 0 2px 0;
+    border-color: black;
+    box-sizing: border-box;
+    background-color: white;
+}
+form>section{
+    background-color: white;
+    margin:15px;
+    box-shadow:-1px -1px 2px,1px 1px 2px;
+    padding:5px;
+}
+form>section>p{
+    width:90%;
+    padding:5px;
+    padding-bottom:10px;
+    margin-left:10px;
+   
+    
+    text-transform: capitalize;
+  font-weight: bold;
+}
+form>section>section>p{
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-left:25px;
+
+}
+form,main>section{
+    width:80%;
+
+    margin:auto;
+}
+form>section>section{
+   display: block;
+   min-height: 150px;
+    width:95%;
+    margin:auto;
+    border:2px solid red;
+    border-width:0.5px 0 0 0;
+
+    border-color:#cfe2f3;
+
+}
+header h1{
+    text-transform: capitalize;
+    font-family: sans-serif;
+    font-weight: normal;
+    transform: scale(3,3);
+    color:#017cc2;
+    padding-bottom: 5px;
+}
+
+header{
+    width:100%;
+   
+    left:0;
+    margin:0;
+    padding:5px;
+    box-sizing: border-box;
+    background-color: white;
+    box-shadow:0 2px 1px;
+}
+
+header p{
+    width:100%;
+    color:#017cc2;
+    word-spacing: 5px;
+}
+header article{
+    text-align: center;
+
+    
+    
+}
+#par{
+    background-color:#fff6d5;
+    border-radius:15px;
+    margin:auto;
+    width:65%;
+    padding:15px;
+    
+}
+
+html,body{
+    margin:0;
+    position: relative;
+    box-sizing: border-box;
+    width:100%;
+   overflow-x: hidden;
+   
+}
+   
+span{
+    position: relative;
+    display: block;
+   
+}
+
+
+span b{
+    position: absolute;
+    bottom:0;
+    left:3%;
+    }
+input:focus+b,select:focus+b{
+   transform: translatey(-150%);
+   transition:transform 0.5s ease;
+}
+span.btn{
+    display: inline;
+    position: relative;
+   
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+input[type="radio"],input[type="checkbox"]{
+    width:15px;
+    height: 15px;
+    border-radius: 50%!important;
+}
+
+span.btn b{
+    
+    display:inline-block;
+    border-radius: 50%;
+    width:15px;
+    height: 15px;
+    position: absolute;
+    line-height: 15px;
+    padding: 1px;
+    display:none;
+
+}
+span.btn .btnb{
+    display: inline-block;
+}
+input[type="radio"]:focus+b{
+    display: inline-block;
+}
+input[type="radio"]+b,input[type="checkbox"]+b{
+    
+    transform: translate(0)!important;
+}
+input{
+  padding-left:15px ;
+}
+
+#arti{
+    
+    margin:auto;
+   margin-bottom: 150px;
+    text-align: center;
+}
+#error{
+    margin-bottom: 150px;
+    display: none;
+}
+
+footer input[type="submit"],article input{
+    padding:10px;
+    width:200px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: black;
+    color:white;
+    border-radius: 15px!important;
+    font-weight: bold;
+}
+button.btn,button.btn>b,span.btn b{
+    border:2px solid #5e1f89;
+    color:#5e1f89;
+    background-color: #edcfff;
+}
+
+form button{
+    text-transform: uppercase;
+    text-align: center;
+    width:100px;
+    border:2px solid black;
+    font-weight: bold;
+    padding:10px;
+    border-radius: 25px;
+    background-color: white;
+    color:black;
+}
+#back1,#back2{
+    display: none;
+}
+main{
+    margin-bottom:55px;
+}
+footer{
+    position: fixed;
+    bottom:0;
+    
+    width:100%;
+    background-color: white;
+    display: flex;
+   
+    flex-flow:row wrap;
+    text-transform: capitalize;
+    justify-content: space-around;
+}
+footer section{
+    padding-top:15px;
+}
+select option{
+    text-transform: capitalize;
+    font-weight: bold;
+
+}
+label{
+    text-transform: capitalize;
+}
+#ask2,#ask3{
+    display: none;
+}
+#error{
+    width:100%;
+    border:2px solid red;
+    margin-top:15px;
+}
+#error .linker{
+    display: flex;
+    flex:30%;
+    flex-flow: row wrap;
+   justify-content: center;
+  
+
+}
+.linker{
+    padding:5px;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.linker section:nth-child(2){
+    color:red;
+}
+#error section{
+    width:33%;
+   
+}
+#error a section:last-child{
+    font-size: 18px;
+}

@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>team1</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="styleswt.css">
+	<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="icon" href="icon.ico">
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.min.css"/> -->
+</head>
+<body onmouseover="progress_bar_fun()" onload="progress_bar_fun()">
+<div class="main-container">
+	<!-- <div class="side">
+        <p id="feed">FEEDBACK</p>
+        <a href="infosys.html"><img id="feed_img" src="feedback.png"></a>
+    </div> -->
+	<header class="headerbar">
+			<img style="margin-top:15px;margin-bottom:15px;height:80px;width:160px" src="infyLogo.png">
+	</header>
+	<div class="container">
+		<div class="address">
+			<h3>Infosys Limited Recruitment </h3>
+			<p>Electronics City, Hosur Road, Bangalore - 560100, India</p>
+			<h2>APPLICATION FOR EMPLOYMENT </h2>
+			<p>Personal Details</p>
+		</div>
+		<!-- 1.  GENDER -->
+		<form class="form-container" action="team2.html" method="post" onsubmit="return submission();">
+			<div class="input-box1">
+				<div id="gender_required1" style="display:none;">
+					<ul type="none">
+						<li  id="gender_alert1" style="font-size: 17px;color:white;background-color: red;padding:6px 0px 6px 0px;">
+							&nbsp;&nbsp;&nbsp;&nbsp;
+							&#x26A0 Do provide values for all the fields</li>
+					</ul>
+				</div>
+				<div class="question" id="genderid">
+					<br>
+						<b><p style="margin-left:10px;margin-top:0px;">&nbsp;&nbsp;&nbsp;1.  GENDER</p></b>
+				</div>
+				<br>	<div class="male" style="margin-left:20px;margin-top:10px;">
+							<div class="container1">
+								<div class="round1">
+								  <input type="checkbox" id="checkbox1" name="gen" onclick="gender_fun1()">
+								  <label for="checkbox1"></label>
+								</div>
+							  </div>
+							  </div>
+							<p style="margin-top:-13px;margin-left:55px;" id="male">MALE</p>
+							<div class="female" style="margin-top:-20px;margin-left:450px;">
+							<div class="container2">
+								<div class="round2">
+								  <input type="checkbox"  id="checkbox2" onclick="gender_fun2()">
+								  <label for="checkbox2"></label>
+								</div>
+							  </div>
+							</div>
+							<p style="margin-top:-12px;margin-left:486px;" id="female" name="gen">FEMALE</p>
+							<div style="margin-top:37px;margin-left:20px;">
+							<div class="container3">
+								<div class="round3">
+								  <input type="checkbox" id="checkbox3" name="gen" onclick="gender_fun3()">
+								  <label for="checkbox3"></label>
+								</div>
+							  </div>
+							  <p style="margin-top:-12px;margin-left:36px;" id="none">I don't want to disclose</p>
+							  </div>
+			</div>
+			<!-- 2.  First name -->
+			<div class="input-box">
+				<div id="first_required" style="display:none;">
+					<ul type="none">
+						<li  style="font-size: 17px;color:white;background-color: rgb(255, 0, 0);padding:6px 0px 6px 0px;">
+							&nbsp;&nbsp;&nbsp;&nbsp;
+							&#x26A0  This field is required</li>
+					</ul>
+				</div>
+				<br>
+					<div class="question first" id="firstid">
+						<b><p style="margin-top:-1px;margin-left:10px">&nbsp;&nbsp;&nbsp;2.  First name</p></b>
+					</div>
+						<div class="info1">
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;As it appears on passport  legal document</p>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;Please do not key in any peronally identifiable information belongingto you or any other person(s) which is unrelated to the buiness purpose of this survey</p>
+						</div><br>
+						<div class="inputfield">
+						<i class='bx bxs-star' id="star1"></i>
+						&nbsp;&nbsp;<input type="text" name="" style="padding-left:5px;" id="firstname" onfocusout="first_function(),star_fun_off(star1)" onfocusin="underline_fun(this),star_fun_on(star1)">
+						</div>
+				</div>
+				<div class="input-box">
+					<div id="second_required" style="display:none;">
+						<ul type="none">
+							<li  style="font-size: 17px;color:white;background-color: red;padding:6px 0px 6px 0px;">
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								&#x26A0  This field is required</li>
+						</ul>
+					</div>
+					<br>
+					<!-- 2.  last name -->
+						<div class="question first" id="lastid">
+							<b><p style="margin-top:-1px;margin-left:10px">&nbsp;&nbsp;&nbsp;3.  Last name</p></b>
+						</div>
+							<div class="info1">
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;As it appears on passport  legal document</p>
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;Please do not key in any peronally identifiable information belongingto you or any other person(s) which is unrelated to the buiness purpose of this survey</p>
+							</div><br>
+							<div class="inputfield">
+							<i class='bx bxs-star' id="star2"></i>
+							&nbsp;&nbsp;<input type="text" name="" style="padding-left:5px;" id="secondname" onfocusout="second_function(),star_fun_off(star2)" onfocusin="underline_fun(this),star_fun_on(star2)">
+							</div>
+						</div>
+					</div>
+					<!--Email-->
+					<div class="input-box" style="margin-left:110px;">
+						<div id="email_required1" style="display:none;">
+							<ul type="none">
+								<li  id="email_alert1" style="font-size: 17px;color:white;background-color: red;padding:6px 0px 6px 0px;">
+									&nbsp;&nbsp;&nbsp;&nbsp;
+									&#x26A0  This field is required</li>
+							</ul>
+						</div>
+						<div id="email_required2" style="display:none;">
+						<ul type="none">
+							<li id="email_alert2" style="font-size: 17px;color:white;background-color: red;padding:6px 0px 6px 0px;">
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								&#x26A0  The response should be in ^.+@+$ format</li>
+						</ul>
+					</div>
+						<br>
+						<!-- primary email address -->
+							<div class="question first" id="emailid">
+								<b><p style="margin-top:-1px;margin-left:10px">&nbsp;&nbsp;&nbsp;4.  Primary email address</p></b>
+							</div>
+								<div class="info1">
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;Personal E-mail ID only</p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;Please do not key in any peronally identifiable information belongingto you or any other person(s) which is unrelated to the buiness purpose of this survey</p>
+								</div><br>
+								<div class="inputfield">
+								<i class='bx bxs-star' id="star3"></i>
+								&nbsp;&nbsp;<input type="text" name="" style="padding-left:5px;margin-top:20px;" id="emaili" onfocusout="email_function(),star_fun_off(star3)" onfocusin="underline_fun(this),star_fun_on(star3)">
+								</div>
+						</div>
+				<!-- passport size photo-->
+				<div>
+					<div id="photo_required" style="display:none;">
+						<ul type="none">
+							<li id="photo_alert1" style="width:1120px;margin-left:110px;font-size: 17px;color:white;background-color: rgb(255, 0, 0);padding:6px 0px 6px 0px;">
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								&#x26A0  This field is required</li>
+						</ul>
+					</div>
+				<div class="input-box1" id="photoid" style="margin-top:-1px;margin-left:110px;">
+					<div class="question first">
+						<br>
+						<b><p style="margin-bottom:-15px;margin-left:10px;">&nbsp;&nbsp;&nbsp;5.  Upload recent passport size color photo</p></b>
+					</div><br>
+					<div class="info1">
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;Please ensure the photograph size is within 512KB</p>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;Image file with size upto 5MB</p>
+					</div>
+						<div class="imageupload">
+							<input type="file" style="margin-left:50px;" name="image" id="image" value="" onchange="OnFileValidation()">
+						</div>
+					</div>
+				<!-- resume -->
+				<div>
+					<div id="resume_required" style="display:none;">
+						<ul type="none">
+							<li id="resume_alert1" style="width:1120px;margin-left:110px;font-size: 17px;color:white;background-color: rgb(255, 0, 0);padding:6px 0px 6px 0px;">
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								&#x26A0  This field is required</li>
+						</ul>
+					</div>
+				<div class="input-box resume-box" id="resumeid" style="margin-top:-1px;margin-left:110px;">
+					<div class="question first">
+						<br>
+						<b><p style="margin-bottom:-15px;margin-left:10px;">&nbsp;&nbsp;&nbsp;6.  Upload your resume</p></b>
+					</div><br>
+					<div class="info1">
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;Upload resume only in PDF and please ensure resume size is within 2MB</p>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;Up to 1 file, only pdf with max size of 5MB</p>
+					</div>
+						<div class="fileupload" style="margin-left:20px;">
+							<div class="browsefile">
+								<p>Drag and drop file</p><p>or</p>
+								<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+								<input type="file" style="margin-left:50px;" name="image" id="resume" value="" onchange="OnFileValidationRes()">
+							</div>
+							<p><b>Uploaded Files :</b><br><p id="uploaded"></p></p>
+						</div>
+				</div>
+				<br>
+				<!-- phone number -->
+				<div class="input-box" id="phoneid" style="margin-top:-1px;margin-left:110px;height:200px;">
+					<div id="phone_required1" style="display:none;">
+						<ul type="none">
+							<li  id="phone_alert1" style="font-size: 17px;color:white;background-color: red;padding:6px 0px 6px 0px;">
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								&#x26A0 Do provide values for all the fields</li>
+						</ul>
+					</div>
+					<div id="india_required1" style="display:none;">
+						<ul type="none">
+							<li  id="phone_alert1" style="font-size: 17px;color:white;background-color: red;padding:6px 0px 6px 0px;">
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								&#x26A0 Please provide a valid number (10 digits)</li>
+						</ul>
+					</div>
+					<div class="question first" style="margin-top:0px;margin-left:-105px;">
+						<div id="team1_div2" style="margin-top:10px;margin-right:-25px;">
+							<div class="question first">
+								<b><p style="margin-bottom:10px;margin-left:10px;">&nbsp;&nbsp;&nbsp;7.Preferred contact number</p><p style="margin-left:240px;margin-top:-15px;font-weight:300;font-size:small;color:rgb(193, 193, 193)">(optional)</p></b>
+							</div>		
+								<table class="tableph" height="70" cellspacing="10" style="position:relative;margin-top:-40px;">
+									<tr>
+										<td class="tdcountry"><small style="color:gray;">Country Code*</small>
+										<br>
+											<select class="chosen" onclick="phNo()">
+												<option  value="91">🏳️‍🌈India(+91)</option>
+												<option value="977">🚩Nepal (+977)</option>
+												<option  value="969">🏴Yemen (North)(+969)</option>
+												<option  value="968">💴Oman (+968)</option>
+												<option  value="507">💶Panama (+507)</option>
+												<option  value="44">🏴󠁣󠁦󠁵󠁫󠁿UK (+44)</option>
+											</select>
+										</td>
+										<td class="tdph" style="padding-bottom: 60px;">
+											<small style="color:gray;" >  Phone number*</small><br>
+											<input type="number" placeholder="Phone number*" class="ph" id="phone_number" onfocusin="underline_fun(this)" onfocusout="phone_num_valid()">
+										</td>
+									</tr>
+								</table>
+						</div>
+					</div><br>
+				</div>
+				<!-- Alternate contact number -->
+				<div class="input-box"  id="acon" style="margin-top:-1px;margin-left:110px;height:200px;">
+					<div id="phone_required2" style="display:none;width:85%">
+						<ul type="none">
+							<li  id="phone_alert2" style="font-size: 17px;color:white;background-color: red;padding:6px 0px 6px 0px;">
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								&#x26A0 Please provide a valid number (10 digits)</li>
+						</ul>
+					</div>
+					<div id="team1_div2" style="margin-top:10px;margin-left:0px;">
+						<div class="question first">
+							<br>
+							<b><p style="margin-bottom:-15px;margin-left:10px;">&nbsp;&nbsp;&nbsp;8.  Alternate contact number</p><p style="margin-left:240px;margin-top:-15px;font-weight:300;font-size:small;color:rgb(193, 193, 193)">(optional)</p></b>
+						</div>
+						<br>
+							<table class="tableph" height="70" cellspacing="10" style="position:relative;margin-top:-40px;">
+								<tr>
+									<td class="tdcountry"><small style="color:gray;">Country Code*</small>
+									<br>
+										<select class="chosen" onclick="phNo()" style="width:315px">
+											<option  value="91">🏳️‍🌈India(+91)</option>
+											<option value="977">🚩Nepal (+977)</option>
+											<option  value="969">🏴Yemen (North)(+969)</option>
+											<option  value="968">💴Oman (+968)</option>
+											<option  value="507">💶Panama (+507)</option>
+											<option  value="44">🏴󠁣󠁦󠁵󠁫󠁿UK (+44)</option>
+										</select>
+									</td>
+									<td class="tdph" style="padding-bottom: 60px;">
+										<small style="color:gray;" >  Phone number*</small><br>
+										<input type="number" placeholder="Phone number*" class="ph" id ="alte" style="width:625px;" onfocusin="underline_fun(this)" onfocusout="alt_num_valid()">
+									</td>
+								</tr>
+							</table>
+					</div>
+				</div>
+				<!-- date-of-birth -->
+		<div class="input-box" id="dob"style="margin-top:-1px;margin-left:110px;height:200px;">
+			<div id="date_required1" style="display:none;">
+				<ul type="none">
+					<li  id="date_alert1" style="font-size: 17px;color:white;background-color: red;padding:6px 0px 6px 0px;">
+						&nbsp;&nbsp;&nbsp;&nbsp;
+						&#x26A0 Date of birth is required</li>
+				</ul>
+			</div>
+						<br>
+							<div class="question first" id="dobid">
+								<b><p style="margin-bottom:-15px;margin-left:10px;">&nbsp;&nbsp;&nbsp;9.  Date of Birth</p></b>
+							</div>
+								<div class="info1">
+									<p style="margin-top:30px;margin-left:8px">&nbsp;&nbsp;&nbsp;&nbsp;As per passport / legal document</p>
+								</div><br>
+								<div class="inputfield">
+								Date<i class='bx bxs-star' id="star4"></i>
+								&nbsp;&nbsp;<input type="date" id="datee" placeholder=" " name="" style="width:88%" onchange="date_fun(this)" onfocusout="date_fun(this)">
+								</div>
+						</div>		
+		<!-- CITIZENSHIP -->
+		<div>
+			<div id="citizen_required" style="display:none;">
+				<ul type="none">
+					<li id="citizen_alert1" style="width:1120px;margin-left:110px;font-size: 17px;color:white;background-color: rgb(255, 0, 0);padding:6px 0px 6px 0px;">
+						&nbsp;&nbsp;&nbsp;&nbsp;
+						&#x26A0  This field is required</li>
+				</ul>
+			</div>
+		<div class="input-box" id="citzid" style="margin-top:-1px;margin-left:110px;height:185px;">
+						<br><br>
+							<div class="question first">
+								<b><p style="margin-top:-20px;margin-left:10px;">&nbsp;&nbsp;&nbsp;10.  CITIZENSHIP(<small>s</small>)</p></b>
+							</div>
+								<div class="info1">
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;Please do not key in any peronally identifiable information belongingto you or any other person(s) which is unrelated to the buiness purpose of this survey</p>
+								</div><br>
+								<div class="inputfield" style="margin-top:10px;">
+							<i class='bx bxs-star' id="star5"></i>
+							&nbsp;&nbsp;<input type="text" name="" style="padding-left:5px;"  id="citizen" onfocusout="citizen_function(),star_fun_off(star5)" onfocusin="underline_fun(this),star_fun_on(star5)">
+							</div>
+				</div>
+		</div>
+				<!-- Passport -->
+				<div>
+					<div id="passport_required" style="display:none;">
+						<ul type="none">
+							<li id="passport_alert1" style="width:1120px;margin-left:110px;font-size: 17px;color:white;background-color: rgb(255, 0, 0);padding:6px 0px 6px 0px;">
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								&#x26A0  This field is required</li>
+						</ul>
+					</div>
+				<div class="input-box1" id="paspid" style="margin-top:-1px;margin-left:110px;height:80px;">
+					<div class="question first">
+						<b><p style="margin-top:30px;margin-left:10px;">&nbsp;&nbsp;&nbsp;11. Do you have a passport?</p></b>
+						<img src="yesbc.png" id="yes" style="position:absolute;margin-top:-28px;margin-left:380px;" value="yes" title="YES" onmouseover="yes_fun_on()" onmouseout="yes_fun_off()" onclick="yes_fun()">
+						<img src="nobc.png" id="no" style="position:absolute;margin-top:-28px;margin-left:499px;" value="no" title="NO" onmouseover="no_fun_on()" onmouseout="no_fun_off()" onclick="no_fun()">
+					</div>
+				</div>
+				<!-- Address for communication -->
+				<div id="div" style="height:760px">
+					<h2 class="h2">12.&nbsp;Address For Communication</h2>
+						<hr>
+						<div id="div01">
+						<h3 class="h3"><b>&nbsp;&nbsp;Street/House Number</b></h3>
+						<div class="info1">
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;Please do not key in any personall identifiable information belonging to you or any other person(s) which is unrelated to the business purpose of this survey</p>
+						</div><br>
+						<label for="id2" class="dot" style=" margin-bottom:12px">
+							<p id="star6" style="margin-top:10px">*</p>
+						</label>
+						<div style="margin-top:14px;">
+						<input type="text" id="id2" style="width:965px;margin-bottom:0px;" onfocusin="underline_fun(this),star_fun_on(star6),house_fun(star6)" onfocusout="star_fun_off(star6),house_fun(star6),street_req(this)" oninput="street_req(this)"></div><br><br><br>
+						<ul type="none" id="street1" style="display:none;">
+							<li  style="width:1120px;margin-top:-35px;margin-left:0px;font-size: 15px;color:red;padding:6px 0px 6px 0px;">
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								ⓧ  This field value is required</li>
+						</ul>
+					</div>
+						<hr>
+						<div id="div02">
+						<h3 class="h3" style="margin-top:14px;"><b>&nbsp;&nbsp;Address Line 1</b></h3>
+						<div class="info1" style="margin-top:-6px;">
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;Please do not key in any personall identifiable information belonging to you or any other person(s) which is unrelated to the business purpose of this survey</p>
+						</div><br>
+						<input class="id2" type="text" name="street" style="height:120px;width:965px;margin-bottom:7px;" onfocusin="underline_fun(this),star_fun_on()"><br><br><br>
+					</div>
+					   <hr>
+						<h3 id="pincodeid" class="h3" style="margin-top:10px"><b>&nbsp;&nbsp;Pincode</b></h3>
+						<div id="divisionflex">
+							<label for="id3" style=" margin-top:10px"class="dot">
+								<p id="star7" style="margin-top:10px">*</p>
+							</label>
+							<div style="background-color: none;"><input type="number" class="textid1" id="pincode" style="width:245px;border-color: black;" oninput="pincode_fun()" onfocusin="pin_underline_fun(this),underline_fun(this),star_fun_on(star7),pin_fun(star7)" onfocusout="star_fun_off(star7),pin_fun(star7),pin_req(post1),pin_underline_fun(this)"></div>
+							<div style="background-color: none;"><fieldset style="margin-top:-20px;height:70px;border:1px solid rgb(179, 178, 178);border-radius:6.5px;width:150px;margin-left:15px;"><legend id="statelegend" style="display:none;margin-left:8px;margin-top:-10px;">&nbsp;State&nbsp;</legend><input type="text" id="state" class="textid" disabled readonly placeholder="State" style="margin-top:20px;margin-left:0px;background-color:white;height:30px;border:0px;width:180px"></fieldset></div>
+							<div style="background-color: none;"><fieldset style="margin-top:-20px;height:70px;border:1px solid rgb(179, 178, 178);border-radius:6.5px;width:150px;margin-left:15px;"><legend id="districtlegend" style="display:none;margin-left:8px;margin-top:-10px;">&nbsp;District&nbsp;</legend><input type="text" id="district" class="textid" disabled readonly placeholder="District" style="margin-top:20px;margin-left:0px;background-color:white;height:30px;border:0px;width:180px"></fieldset></div>
+							<div style="background-color: none;"><fieldset style="margin-top:-20px;height:70px;border:1px solid rgb(179, 178, 178);border-radius:6.5px;width:150px;margin-left:15px;"><legend id="citylegend" style="display:none;margin-left:8px;margin-top:-10px;">&nbsp;City&nbsp;</legend><input type="text" id="city" class="textid" disabled readonly placeholder="City" style="margin-top:20px;margin-left:0px;background-color:white;height:30px;border:0px;width:180px"></fieldset></div>	
+						</div><br><br><br>
+						<select class="id3" placeholder="Post Office*" id="post" onfocusin="underline_fun(this)" >
+							<option value="0" disabled selected hidden style="color:grey;font-size: larger;">Post Office*</option>
+							<option id="11" style="display:none;font-size: medium;">Vetapalem</option>
+							<option id="12" style="display:none;font-size: medium;">Desaipeta</option>
+							<option id="13" style="display:none;font-size: medium;">Pandillapalli</option>
+							<option id="21" style="display:none;font-size: medium;">Kamakoti</option>
+							<option id="22" style="display:none;font-size: medium;">H.B.Colony</option>
+							<option id="23" style="display:none;font-size: medium;">Ambapuram</option>
+							<option id="31" style="display:none;font-size: medium;">Bazaar Gate</option>
+							<option id="32" style="display:none;font-size: medium;">Town Hall Street</option>
+							<option id="33" style="display:none;font-size: medium;">India Post</option>
+							<option id="41" style="display:none;font-size: medium;">Chowkhamba</option>
+							<option id="42" style="display:none;font-size: medium;">Bengali Tola</option>
+							<option id="43" style="display:none;font-size: medium;">India Post</option>
+							<option id="51" style="display:none;font-size: medium;">Meenambakam</option>
+							<option id="52" style="display:none;font-size: medium;">Nungambakam</option>
+							<option id="53" style="display:none;font-size: medium;">Vadapalani</option>
+						</select>
+						<!-- <input type="text" class="id3" placeholder="Post Office*" id="post" onfocusin="underline_fun(this)"> -->
+						<ul type="none" id="post1" style="display:none;">
+							<li  style="width:1120px;margin-top:10px;margin-left:0px;font-size: 15px;color:red;padding:6px 0px 6px 0px;">
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								ⓧ  Do provide an input for State,District,City,Post Office. These fields are required</li>
+						</ul>
+					<br><br><br><br><br><br>
+					 </div>
+					 <br><br><br>
+					 <input type="button" onclick="link_fun(this)" style="width:200px;height:35px;margin-left:580px;border-radius:5px;background-color: black;color:white;font-size:larger;" onmouseover="next_page()" onmouseout="no_next_page()" id="next" name="" value="NEXT PAGE">
+		</div>
+		<br>
+		<br><br>
+	</div>
+	<div id="consolidated_errors" style="display:none;width:100%;border-radius:6px;">
+		<div style="border-bottom:1px solid white;margin-left:10px;width:98.5%;padding-bottom:6px;background-color:rgb(230, 242, 253);">
+			<p style="color:red;font-size:20px;font-family:Arial;font-weight:700;padding-top:10px;margin-left:15px;">Errors</p>
+		</div>
+		<div style="background-color:aliceblue;margin-left:10px;height:37.5px;width:98.5%;padding-top:10px;border-bottom:1px solid white;">
+			<ul type="none">
+			<li style="display:inline;padding-left:5px;">Question</li>
+			<li style="display:inline;padding-left:404px;">Error</li>
+			<li style="display:inline;padding-left:596px;">Action</li>
+			</ul>
+		</div>
+		<div class="err_div" id="gen_err" style="display:none;">
+			<table width="100%">
+				<tr>
+					<td style="width:35.8%;">1.Gender</td>
+					<td style="width:48%;color: rgb(255, 0, 0);">This field is required !</td>
+					<td style="width:16.2%"><a href="#genderid"><img src="eye.png" height="20px" width="20px"></a></td>
+				</tr>
+			</table>
+		</div>
+		<div class="err_div" id="fir_err" style="display:none;">
+			<table width="100%">
+				<tr>
+					<td style="width:35.8%;">2.First name</td>
+					<td style="width:48%;color: rgb(255, 0, 0);">This field is required !</td>
+					<td style="width:16.2%"><a href="#firstid"><img src="eye.png" height="20px" width="20px"></a></td>
+				</tr>
+			</table>
+		</div>
+		<div class="err_div" id="las_err" style="display:none;">
+			<table width="100%">
+				<tr>
+					<td style="width:35.8%;">3.Last name</td>
+					<td style="width:48%;color: rgb(255, 0, 0);">This field is required !</td>
+					<td style="width:16.2%"><a href="#lastid"><img src="eye.png" height="20px" width="20px"></a></td>
+				</tr>
+			</table>
+		</div>
+		<div class="err_div" id="ema_err" style="display:none">
+			<table width="100%">
+				<tr>
+					<td style="width:35.8%;">4.Primary email address</td>
+					<td style="width:48%;color: rgb(255, 0, 0);">This field is required !</td>
+					<td style="width:16.2%"><a href="#emailid"><img src="eye.png" height="20px" width="20px"></a></td>
+				</tr>
+			</table>
+		</div>
+		<div class="err_div" id="pho_err" style="display:none">
+			<table width="100%">
+				<tr>
+					<td style="width:35.8%;">5.Passport size color photo</td>
+					<td style="width:48%;color: rgb(255, 0, 0);">This field is required !</td>
+					<td style="width:16.2%"><a href="#photoid"><img src="eye.png" height="20px" width="20px"></a></td>
+				</tr>
+			</table>
+		</div>
+		<div class="err_div" id="res_err" style="display:none">
+			<table width="100%">
+				<tr>
+					<td style="width:35.8%;">6.Resume</td>
+					<td style="width:48%;color: rgb(255, 0, 0);">This field is required !</td>
+					<td style="width:16.2%"><a href="#resumeid"><img src="eye.png" height="20px" width="20px"></a></td>
+				</tr>
+			</table>
+		</div>
+		<div class="err_div" id="con_err" style="display:none">
+			<table width="100%">
+				<tr>
+					<td style="width:35.8%;">7.Preferred contact number</td>
+					<td style="width:48%;color: rgb(255, 0, 0);">This field is required !</td>
+					<td style="width:16.2%"><a href="#phoneid"><img src="eye.png" height="20px" width="20px"></a></td>
+				</tr>
+			</table>
+		</div>
+		<div class="err_div" id="acon_err" style="display:none">
+			<table width="100%">
+				<tr>
+					<td style="width:35.8%;">8.Alternate contact number</td>
+					<td style="width:48%;color: rgb(255, 0, 0);">This field is required !</td>
+					<td style="width:16.2%"><a href="#team1_div2"><img src="eye.png" height="20px" width="20px"></a></td>
+				</tr>
+			</table>
+		</div>
+		<div class="err_div" id="dob_err" style="display:none">
+			<table width="100%">
+				<tr>
+					<td style="width:35.8%;">9.Date of birth</td>
+					<td style="width:48%;color: rgb(255, 0, 0);">This field is required !</td>
+					<td style="width:16.2%"><a href="#dobid"><img src="eye.png" height="20px" width="20px"></a></td>
+				</tr>
+			</table>
+		</div>
+		<div class="err_div" id="cit_err" style="display:none">
+			<table width="100%">
+				<tr>
+					<td style="width:35.8%;">10.Citizenship</td>
+					<td style="width:48%;color: rgb(255, 0, 0);">This field is required !</td>
+					<td style="width:16.2%"><a href="#citzid"><img src="eye.png" height="20px" width="20px"></a></td>
+				</tr>
+			</table>
+		</div>
+		<div class="err_div" id="pas_err" style="display:none">
+			<table width="100%">
+				<tr>
+					<td style="width:35.8%;">11.Passport</td>
+					<td style="width:48%;color: rgb(255, 0, 0);">This field is required !</td>
+					<td style="width:16.2%"><a href="#paspid"><img src="eye.png" height="20px" width="20px"></a></td>
+				</tr>
+			</table>
+		</div>
+		<div class="err_div" id="num_err" style="display:none">
+			<table width="100%">
+				<tr>
+					<td style="width:35.8%;">12.Street/House number</td>
+					<td style="width:48%;color: rgb(255, 0, 0);">This field is required !</td>
+					<td style="width:16.2%"><a href="#div"><img src="eye.png" height="20px" width="20px"></a></td>
+				</tr>
+			</table>
+		</div>
+		<div class="err_div" id="pin_err" style="display:none">
+			<table width="100%">
+				<tr>
+					<td style="width:35.8%;">13.Pincode</td>
+					<td style="width:48%;color: rgb(255, 0, 0);">This field is required !</td>
+					<td style="width:16.2%"><a href="#pincodeid"><img src="eye.png" height="20px" width="20px"></a></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<br><br><br><br>
+	<footer>
+		<div id="team1-div4">
+			<input type="text" value="0 of 97 answered" id="progress_num" disabled readonly style="width:300px;margin-left:115px;margin-top:20px;border:0px;color:black;font-size:small;font-weight: 900;font-family: Arial, Helvetica, sans-serif;">
+			<div id="progress_outer" style="background-color:rgb(160, 160, 160);border-radius:50px;height:3.5px;width:160.869565px;margin-top:-10px;margin-left:248px;">
+				<div id="progress_inner" style=" height:3.5px;width:0px;background-color:#7b01b0;border-radius:50px;">
+				</div>
+			</div>
+			<div style="margin-left:700px;margin-top:-10px;"><b>Estimated Time : 29 mins</b></div>
+			<input type="button" id="submit" name="" style="margin-top:-27.5px" value="NEXT PAGE" onclick="link_fun(this)">
+		</div>
+	</footer>
+</div>
+</form>
+	<script type="text/javascript" src="team1Main.js"></script>
+<script type="text/javascript">
+	//alert(2);
+	function display()
+	{
+	//alert(3);
+		document.getElementById('div3').style.display="block";
+	}
+</script>
+
+<div id="bg" onclick="jahnagi()"style=" width:100%;
+    box-sizing: border-box;
+    position: fixed;
+    top:0;
+   height: 100%;
+    display: none;
+    background-color: black;
+    opacity: 0.5;"></div>
+    <div id="fix"  style=" cursor:pointer;position: fixed;
+   
+    writing-mode: sideways-lr;
+    text-transform: uppercase;
+  height: 160px;
+width:12px;
+   text-align: center;
+    bottom:22%;
+    transform: translateY(-50%);
+   margin:0;
+   
+    color:white;
+    padding:10px 12px;
+    border-radius: 10px;
+    background-color:#287ac8 ;
+    right: 4px;"onclick="displ(this)" >f<br>e<br>e<br>d<br>b<br>a<br>c<br>k</div>
+   
+    <section id="feed" style=" position: fixed;
+    width:650px;
+    height: 650px;
+    top:5%;
+    box-shadow: 1px 1px 2px gray,-1px -1px 2px gray;
+   border-radius:15px;
+    left:50%;
+    display:none ;
+    background-color: white;
+    transform: translateX(-50%);
+    margin:auto;
+   ">
+    <nav style="position:sticky;top:0;font-size:25px"><b style="cursor:pointer;padding-right:15px;float:right;font-size:35px;right: 0;position: fixed;" onclick="jahnagi()">&times</b></nav>
+        <section style="margin-top:40px">
+            <img src="a.jpg" style="display:block;margin:auto;"width="150px" height="" alt="">
+            <h2 style="text-align:center;font-weight:bold;font-family:sans-serif;">Infosys surveys Feedback</h2>
+        </section>
+        <section style="width:80%;margin:auto;display:flex;justify-content:space-around;border:2px solid black;border-width:0 0 2px 0;">
+            <a style="text-decoration:none;color:black" id="sam"href="#id"onclick="disp(this)">
+                   <article style="margin-bottom:20px" >
+                        <img src="b.jpg"style="padding:15px;border:2px solid black;border-width:0 2px 0px 0;" width="150px"alt="">
+                        <p style="margin:0;text-align:center;padding:0;"><b>Bug Report</b></p>
+                    </article>
+            </a>
+            <a style="text-decoration:none;color:black" href="#id"onclick="disp(this)"> 
+            <article>
+
+            
+                <img src="d.jpg" width="200px"alt="">
+                <p style="margin:15px;text-align:center;padding:0;"><b>Feature Request</b></p></article>
+            </article></a>
+        </section>
+        <section style="border:2px solid black;border-width:0 0 2px 0;width:80%;margin:auto;">
+            <a href="#id" style="text-decoration:none;color:black" onclick="disp(this)">  <article style="display:inline-block;margin-bottom:20px" ><img src="e.jpg"style="display:block;padding-top:15px;" width="250px" height="150px"alt=""></article></a>
+            <b style="position:absolute;top:66%;">General feedback</b>
+        </section>
+    </section>
+    <section id="feed2" style="overflow:scroll;overflow-x:hidden; position: fixed;
+    width:650px;
+    display: none;
+    height: 650px;
+    top:5%;
+    left:50%;
+    background-color: white;
+    transform: translateX(-50%);
+    margin:auto;
+    box-shadow: 1px 1px 2px gray,-1px -1px 2px gray;
+   border-radius:15px;">
+        
+        <nav style="position:sticky;top:0;font-size:25px"><b style="cursor:pointer;position:relative;left:0;" onclick="jahnag(this)">&#8592</b><b style="cursor:pointer;padding-right:15px;float:right;font-size:35px;" onclick="jahnagi()">&times</b></nav>
+        <form action="feedback.php">
+        <section style="margin-top:40px;box-shadow: 0 0 0;">
+            <img src="a.jpg" style="display:block;margin:auto;"width="150px" height="" alt="">
+            <h2 style="text-align:center;font-weight:bold;font-family:sans-serif;">Infosys surveys Feedback</h2>
+        </section>
+        <article style="width:85%;margin:auto;">
+            <b>1.Rate your experience</b>
+            <p style="font-size:35px;padding:0;margin:0;">
+                <b onclick="purp(this)">&#x2606</b>
+               <b onclick="purp(this)">&#x2606</b>
+               <b onclick="purp(this)">&#x2606</b>
+               <b onclick="purp(this)">&#x2606</b>
+               <b onclick="purp(this)">&#x2606</b>
+            </p>
+        </article>
+        <article style="width:85%;margin:auto;margin-top:25px;">
+            <b>2.Your email address</b>
+            <p style="font-family:sans-serif;font-size:14px;width:80%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et soluta enim dolor sunt excepturi ab possimus adipisci consequuntur quidem reiciendis.</p>
+            <input style="display: block;
+            margin:auto;
+            width:95%;
+            color:black;
+            border-radius: 0;
+            text-align: left;
+            outline:none;
+            height: 30px;
+            border-width:0 0 2px 0;
+            border-color: black;
+            box-sizing: border-box;
+            background-color: white;"type="text" name="feed">
+        </article>
+        <article style="width:85%;margin:auto;margin-top:25px;">
+            <b>3.leave us a comment</b>
+            <p style="font-family:sans-serif;font-size:14px;width:80%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et soluta enim dolor sunt excepturi ab possimus adipisci consequuntur quidem reiciendis.</p>
+            <input  style="display: block;
+            margin:auto;
+            width:95%;
+            color:black;
+            border-radius: 0;
+            text-align: left;
+            outline:none;
+            height: 30px;
+            border-width:0 0 2px 0;
+            border-color: black;
+            box-sizing: border-box;
+            background-color: white;" type="text" name="feed">
+        </article>
+       <article style="width:85%;margin:auto;margin-top:15px;display:flex;justify-content:space-around;">
+           <a href="#id" style="text-decoration:none;color:black;"> <section>screesnshot</section></a>
+            <section>|</section>
+            <a href="#id" style="text-decoration:none;color:black;"> <section>video</section></a>
+           
+       </article>
+       <article style="width:85%;margin:auto;" >
+       <input type="submit" style="padding:10px;
+       width:200px;
+       margin:auto;
+       margin-top:15px;
+       margin-bottom:15px;
+       display: block;
+       text-transform: uppercase;
+       text-align: center;
+       background-color: black;
+       color:white;
+       border-radius: 15px!important;
+       font-weight: bold;"value="send feedback">
+       </form>
+    </article>
+    </section>
+    <script type="text/javascript">
+        function purp(a){
+            if (!a.hasAttribute("class")){
+                a.style.color="#8029c1";
+                
+                a.setAttribute("class","jahnagi");
+            }
+            else{
+                a.style.color="black";
+                a.removeAttribute("class");
+
+            }
+            
+        }
+        function disp(a){
+            if (!a.hasAttribute("class")){
+               
+                document.getElementById("feed2").style.display="block";
+                a.setAttribute("class","jahnag");
+                a.parentElement.parentElement.style.display="none";
+               
+            }
+            else{
+                document.getElementById("feed2").style.display="none";
+
+                a.removeAttribute("class");
+
+            }
+        }
+        function jahnag(a){
+            if (!a.hasAttribute("class")){
+               
+               document.getElementById("feed").style.display="block";
+               a.setAttribute("class","jahnag");
+               a.parentElement.parentElement.style.display="none";
+  
+           }
+           else{
+               document.getElementById("feed").style.display="none";
+
+               a.removeAttribute("class");
+
+           }
+
+        }
+        function displ(a){
+            if (!a.hasAttribute("class")){
+                a.setAttribute("class","jahnag");
+                document.getElementById("feed").style.display="block";
+
+                document.getElementById("bg").style.display="block";
+                
+
+            }
+            else{
+
+                a.removeAttribute("class");
+                document.getElementById("bg").style.display="none";
+
+                document.getElementById("feed").style.display="none";
+            }
+        }
+        function jahnagi(){
+            document.getElementById("feed").style.display="none";
+            document.getElementById("feed2").style.display="none";
+            document.getElementById("bg").style.display="none";
+
+
+        }
+    </script>
+</body>
+<!-- <script type="text/javascript">
+	$(".chosen").chosen();
+</script> -->
+</html>

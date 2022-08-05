@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="team5Main.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<body>
+	<div class="team5">
+	<form action="team6.html" method="post" onsubmit="return validate()">
+	<div class="transparent5" style="display:none;"></div>
+	<div id="team5-div1"><center><img src="infyLogo.png" width="160px" height="75px"  style="margin-top: 10px;"></center>
+		<div id="team5-div1_1" style="display:none" ><span style="font-size: 17px;position: absolute; right: 7px;top: 5px">&#9747;</span></div>
+	</div>
+	<div id="team5-div2">
+		<div id="team5-div2_1" style="padding-top: 5px;">
+
+		<p style="font-size: 19.2px; margin-top :0px ;margin-bottom: -7px;">Infosys Limited Recruitment</p>
+		<p style="font-size:16px;margin-bottom: 6px;">Electronics City, Hosur Road, Bangalore - 560100, India</p>
+		<b style="font-size:17.8px;">APPLICATION FOR EMPLOYMENT</b><br>
+		<p style= "font-size:16.2px; margin-top: 7px;">Proof Of Identity</p>
+		</div>
+
+<!-- 		<div id="feedback" onclick="feedback()">
+			<img src="feedback.png">
+		</div> -->
+		<div style="font-size:18px;background-color: 
+		#de350b;color: white;margin-bottom: -5px;width: 87.4%;height: 30px;display: none;" id="error"><span style="font-size:22px;">&#9888;</span>Identity card required!</div>
+
+		<div style="font-size:18px;background-color: 
+		#de350b;color: white;margin-bottom: -5px;width:87.4%;height: 30px;display: none;" id="error1">
+
+		<span style="font-size:22px;">&#9888;</span>File size should be less than 5MB!</div>
+		<div id="team5-div2_2">
+			<p id="p_id">1.&nbsp;&nbsp;&nbsp;Please upload your college photo identity card or government photo identity proof in PDF for verification</p>
+			<p style="font-size: 13.3px;margin-top: -3px;">Please do not upload Aadhar card as your photo identity proof</p>
+			<p style="font-size: 13px;opacity: 0.5;">Up to 1 file, only pdf with max size of 5MB</p>
+			
+
+			<div class="main">
+	            <div class="drop-zone">
+	                <span class="drop-zone__prompt" id="d1">Drop and Drop <br>or <br> <span class="drop" id="d2">Browse</span></span>
+	                <input type="file" name="myFile" class="drop-zone__input" id="drop-display" accept="APPLICATION/pdf,APPLICATION"> 
+	             </div>
+	              <div id="uploaded-files"><b>uploaded files:</b></div>
+	              <div class="files-area">
+	                <div class="img" id="img5" style="display: none;"><img src="pdflogo.png" style= "height: 30px; width: 22px;">
+	                </div>
+	                <div class="filename">
+	                	<label id="file-size"></label>
+						<span id="x" onclick="naveen()">&times;</span>
+						<progress value="10" max="100" id="progressbar" style="display: none;"></progress>
+						<p id="uploaded-after">uploaded!</p>
+					</div>
+	              </div>
+        	</div>
+
+		</div>
+		<a href='team4.html'><input type="button" id="submit-previous" name="" value="PREVIOUS PAGE"></a>
+		<a href='Team6.html'><input type="submit" id="submit-next" name="" value="NEXT PAGE"></a>
+
+		<!-- <div style="display: none;" id="feedback1">
+			<img src="infofeed.png" style="margin-left: -1px;margin-top: 13px; margin-bottom: 20px;">
+		<div id="feedback-div1"><p style=" margin-top: 40px;font-size: 22px; margin-left: 40px;">Bug Report</p></div>
+		<div id="feedback-div2"><p style="margin-top: 40px;font-size: 22px; margin-left: 20px;">Feature Request</p></div>
+		<br>
+		<hr width="420px">
+		<div id="feedback-div3"><p style="margin-top: 60px; font-size: 24px;margin-left: 90px;">General Feedback</p></div>
+		<img src="infofeedfooter.png" style="position: absolute; bottom:0">
+		<span id="x-1" onclick="feedback1()">X</span>
+		</div> -->
+	</div>
+	<footer>
+		<div id="team5-div4">
+			<b id="progress">55 of 99 answered&nbsp;</b><progress value="55" max="100" id="progressbar1"></progress>
+			<b id="esTime">Estimated Time:29 mins</b>
+			<input type="submit" id="submit" name="" value="NEXT PAGE">
+		</div>
+	</footer>
+</form>
+</div>
+
+
+<div id="bg" onclick="jahnagi()"style=" width:100%;
+    box-sizing: border-box;
+    position: fixed;
+    top:0;
+   height: 100%;
+    display: none;
+    background-color: black;
+    z-index: 2;
+    opacity: 0.5;"></div>
+    <div id="fix"  style=" cursor:pointer;position: fixed;
+   
+    writing-mode: sideways-lr;
+    text-transform: uppercase;
+  height: 150px;
+width:10px;
+   text-align: center;
+    bottom:20%;
+    transform: translateY(-50%);
+   margin:0;
+   
+    color:white;
+    padding:10px;
+    border-radius: 10px;
+    background-color:#287ac8 ;
+    right: 0;"onclick="displ(this)" >f<br>e<br>e<br>d<br>b<br>a<br>c<br>k</div>
+   
+    <section id="feed" style=" position: fixed;
+    width:650px;
+    height: 650px;
+    top:5%;
+    box-shadow: 1px 1px 2px gray,-1px -1px 2px gray;
+   border-radius:15px;
+    left:50%;
+    display:none ;
+    z-index: 2;
+    background-color: white;
+    transform: translateX(-50%);
+    margin:auto;
+   ">
+    <nav style="position:sticky;top:0;font-size:25px"><b style="cursor:pointer;padding-right:15px;float:right;font-size:35px;position: fixed;right: 0;" onclick="jahnagi()">&times</b></nav>
+        <section style="margin-top:40px">
+            <img src="a.jpg" style="display:block;margin:auto;"width="150px" height="" alt="">
+            <h2 style="text-align:center;font-weight:bold;font-family:sans-serif;">Infosys surveys Feedback</h2>
+        </section>
+        <section style="width:80%;margin:auto;display:flex;justify-content:space-around;border:2px solid black;border-width:0 0 2px 0;">
+            <a style="text-decoration:none;color:black" id="sam"href="#id"onclick="disp(this)">
+                   <article style="margin-bottom:20px" >
+                        <img src="b.jpg"style="padding:15px;border:2px solid black;border-width:0 2px 0px 0;" width="150px"alt="">
+                        <p style="margin:0;text-align:center;padding:0;"><b>Bug Report</b></p>
+                    </article>
+            </a>
+            <a style="text-decoration:none;color:black" href="#id"onclick="disp(this)"> 
+            <article>
+
+            
+                <img src="d.jpg" width="200px"alt="">
+                <p style="margin:15px;text-align:center;padding:0;"><b>Feature Request</b></p></article>
+            </article></a>
+        </section>
+        <section style="border:2px solid black;border-width:0 0 2px 0;width:80%;margin:auto;">
+            <a href="#id" style="text-decoration:none;color:black" onclick="disp(this)">  <article style="display:inline-block;margin-bottom:20px" ><img src="e.jpg"style="display:block;padding-top:15px;" width="250px" height="150px"alt=""></article></a>
+            <b style="position:absolute;top:65%;">General feedback</b>
+        </section>
+    </section>
+    <section id="feed2" style="overflow:scroll;overflow-x:hidden; position: fixed;
+    width:650px;
+    display: none;
+    height: 650px;
+    top:5%;
+    left:50%;
+    background-color: white;
+    transform: translateX(-50%);
+    margin:auto;
+    z-index: 2;
+    box-shadow: 1px 1px 2px gray,-1px -1px 2px gray;
+   border-radius:15px;">
+        
+        <nav style="position:sticky;top:0;font-size:25px"><b style="cursor:pointer;position:relative;left:0;" onclick="jahnag(this)">&#8592</b><b style="cursor:pointer;padding-right:15px;float:right;font-size:35px;" onclick="jahnagi()">&times</b></nav>
+        <form action="feedback.php">
+        <section style="margin-top:40px;box-shadow: 0 0 0;">
+            <img src="a.jpg" style="display:block;margin:auto;"width="150px" height="" alt="">
+            <h2 style="text-align:center;font-weight:bold;font-family:sans-serif;">Infosys surveys Feedback</h2>
+        </section>
+        <article style="width:85%;margin:auto;">
+            <b>1.Rate your experience</b>
+            <p style="font-size:35px;padding:0;margin:0;">
+                <b onclick="purp(this)">&#x2606</b>
+               <b onclick="purp(this)">&#x2606</b>
+               <b onclick="purp(this)">&#x2606</b>
+               <b onclick="purp(this)">&#x2606</b>
+               <b onclick="purp(this)">&#x2606</b>
+            </p>
+        </article>
+        <article style="width:85%;margin:auto;margin-top:25px;">
+            <b>2.Your email address</b>
+            <p style="font-family:sans-serif;font-size:14px;width:80%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et soluta enim dolor sunt excepturi ab possimus adipisci consequuntur quidem reiciendis.</p>
+            <input style="display: block;
+            margin:auto;
+            width:95%;
+            color:black;
+            border-radius: 0;
+            text-align: left;
+            outline:none;
+            height: 30px;
+            border-width:0 0 2px 0;
+            border-color: black;
+            box-sizing: border-box;
+            background-color: white;"type="text" name="feed">
+        </article>
+        <article style="width:85%;margin:auto;margin-top:25px;">
+            <b>3.leave us a comment</b>
+            <p style="font-family:sans-serif;font-size:14px;width:80%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et soluta enim dolor sunt excepturi ab possimus adipisci consequuntur quidem reiciendis.</p>
+            <input  style="display: block;
+            margin:auto;
+            width:95%;
+            color:black;
+            border-radius: 0;
+            text-align: left;
+            outline:none;
+            height: 30px;
+            border-width:0 0 2px 0;
+            border-color: black;
+            box-sizing: border-box;
+            background-color: white;" type="text" name="feed">
+        </article>
+       <article style="width:85%;margin:auto;margin-top:15px;display:flex;justify-content:space-around;">
+           <a href="#id" style="text-decoration:none;color:black;"> <section>screesnshot</section></a>
+            <section>|</section>
+            <a href="#id" style="text-decoration:none;color:black;"> <section>video</section></a>
+           
+       </article>
+       <article style="width:85%;margin:auto;" >
+       <input type="submit" style="padding:10px;
+       width:200px;
+       margin:auto;
+       margin-top:15px;
+       margin-bottom:15px;
+       display: block;
+       text-transform: uppercase;
+       text-align: center;
+       background-color: black;
+       color:white;
+       border-radius: 15px!important;
+       font-weight: bold;"value="send feedback">
+       </form>
+    </article>
+    </section>
+    <script type="text/javascript">
+        function purp(a){
+            if (!a.hasAttribute("class")){
+                a.style.color="#8029c1";
+                
+                a.setAttribute("class","jahnagi");
+            }
+            else{
+                a.style.color="black";
+                a.removeAttribute("class");
+
+            }
+            
+        }
+        function disp(a){
+            if (!a.hasAttribute("class")){
+               
+                document.getElementById("feed2").style.display="block";
+                a.setAttribute("class","jahnag");
+                a.parentElement.parentElement.style.display="none";
+               
+            }
+            else{
+                document.getElementById("feed2").style.display="none";
+
+                a.removeAttribute("class");
+
+            }
+        }
+        function jahnag(a){
+            if (!a.hasAttribute("class")){
+               
+               document.getElementById("feed").style.display="block";
+               a.setAttribute("class","jahnag");
+               a.parentElement.parentElement.style.display="none";
+  
+           }
+           else{
+               document.getElementById("feed").style.display="none";
+
+               a.removeAttribute("class");
+
+           }
+
+        }
+        function displ(a){
+            if (!a.hasAttribute("class")){
+                a.setAttribute("class","jahnag");
+                document.getElementById("feed").style.display="block";
+
+                document.getElementById("bg").style.display="block";
+                
+
+            }
+            else{
+
+                a.removeAttribute("class");
+                document.getElementById("bg").style.display="none";
+
+                document.getElementById("feed").style.display="none";
+            }
+        }
+        function jahnagi(){
+            document.getElementById("feed").style.display="none";
+            document.getElementById("feed2").style.display="none";
+            document.getElementById("bg").style.display="none";
+
+
+        }
+        </script>
+<script type="text/javascript" src="team5Main.js" ></script>
+</body>
+
+</html>

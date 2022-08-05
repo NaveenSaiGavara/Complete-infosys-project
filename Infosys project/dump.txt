@@ -1,0 +1,210 @@
+   <div id="bg" style=" width:100%;
+    box-sizing: border-box;
+    position: fixed;
+    top:0;
+   height: 100%;
+    display: none;
+    background-color: black;
+    opacity: 0.5;">hello</div>
+    <div id="fix"  style=" cursor:pointer;position: fixed;
+   
+    writing-mode: sideways-lr;
+    text-transform: uppercase;
+  height: 200px;
+   text-align: center;
+    top:50%;
+   /* width:200px; */
+   margin:0;
+   
+    color:white;
+    padding:10px;
+    border-radius: 10px;
+    background-color:#287ac8 ;
+    right: 0;"onclick="displ(this)" >feedback</div>
+   
+    <section id="feed" style=" position: fixed;
+    width:650px;
+    height: 650px;
+    top:5%;
+    box-shadow: 1px 1px 2px gray,-1px -1px 2px gray;
+   border-radius:15px;
+    left:50%;
+    display:none ;
+    background-color: white;
+    transform: translateX(-50%);
+    margin:auto;
+   ">
+        <section style="margin-top:40px">
+            <img src="a.jpg" style="display:block;margin:auto;"width="150px" height="" alt="">
+            <h2 style="text-align:center;font-weight:bold;font-family:sans-serif;">Infosys surveys Feedback</h2>
+        </section>
+        <section style="width:80%;margin:auto;display:flex;justify-content:space-around;border:2px solid black;border-width:0 0 2px 0;">
+            <a style="text-decoration:none;color:black" id="sam"href="#id"onclick="disp(this)">
+                   <article style="margin-bottom:20px" >
+                        <img src="b.jpg"style="padding:15px;border:2px solid black;border-width:0 2px 0px 0;" width="150px"alt="">
+                        <p style="margin:0;text-align:center;padding:0;"><b>Bug Report</b></p>
+                    </article>
+            </a>
+            <a style="text-decoration:none;color:black" href="#id"onclick="disp(this)"> 
+            <article>
+
+            
+                <img src="d.jpg" width="200px"alt="">
+                <p style="margin:15px;text-align:center;padding:0;"><b>Feature Request</b></p></article>
+            </article></a>
+        </section>
+        <section style="border:2px solid black;border-width:0 0 2px 0;width:80%;margin:auto;">
+            <a href="#id" style="text-decoration:none;color:black" onclick="disp(this)">  <article style="display:inline-block;margin-bottom:20px" ><img src="e.jpg"style="display:block;padding-top:15px;" width="250px" height="150px"alt=""></article></a>
+            <b style="position:absolute;top:80%;">General feedback</b>
+        </section>
+    </section>
+    <section id="feed2" style="overflow:scroll;overflow-x:hidden; position: fixed;
+    width:650px;
+    display: none;
+    height: 650px;
+    top:5%;
+    left:50%;
+    background-color: white;
+    transform: translateX(-50%);
+    margin:auto;
+    box-shadow: 1px 1px 2px gray,-1px -1px 2px gray;
+   border-radius:15px;">
+        
+        <nav style="position:sticky;top:0;font-size:25px"><b style="cursor:pointer;position:relative;left:0;" onclick="jahnag(this)">&#8592</b><b style="cursor:pointer;padding-right:15px;float:right;font-size:35px;" onclick="jahnagi()">&times</b></nav>
+        <form action="feedback.php">
+        <section style="margin-top:40px;box-shadow: 0 0 0;">
+            <img src="a.jpg" style="display:block;margin:auto;"width="150px" height="" alt="">
+            <h2 style="text-align:center;font-weight:bold;font-family:sans-serif;">Infosys surveys Feedback</h2>
+        </section>
+        <article style="width:85%;margin:auto;">
+            <b>1.Rate your experience</b>
+            <p style="font-size:35px;padding:0;margin:0;">
+                <b onclick="purp(this)">&#x2606</b>
+               <b onclick="purp(this)">&#x2606</b>
+               <b onclick="purp(this)">&#x2606</b>
+               <b onclick="purp(this)">&#x2606</b>
+               <b onclick="purp(this)">&#x2606</b>
+            </p>
+        </article>
+        <article style="width:85%;margin:auto;margin-top:25px;">
+            <b>2.Your email address</b>
+            <p style="font-family:sans-serif;font-size:14px;width:80%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et soluta enim dolor sunt excepturi ab possimus adipisci consequuntur quidem reiciendis.</p>
+            <input style="display: block;
+            margin:auto;
+            width:95%;
+            color:black;
+            border-radius: 0;
+            text-align: left;
+            outline:none;
+            height: 30px;
+            border-width:0 0 2px 0;
+            border-color: black;
+            box-sizing: border-box;
+            background-color: white;"type="text" name="feed">
+        </article>
+        <article style="width:85%;margin:auto;margin-top:25px;">
+            <b>3.leave us a comment</b>
+            <p style="font-family:sans-serif;font-size:14px;width:80%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et soluta enim dolor sunt excepturi ab possimus adipisci consequuntur quidem reiciendis.</p>
+            <input  style="display: block;
+            margin:auto;
+            width:95%;
+            color:black;
+            border-radius: 0;
+            text-align: left;
+            outline:none;
+            height: 30px;
+            border-width:0 0 2px 0;
+            border-color: black;
+            box-sizing: border-box;
+            background-color: white;" type="text" name="feed">
+        </article>
+       <article style="width:85%;margin:auto;margin-top:15px;display:flex;justify-content:space-around;">
+           <a href="#id" style="text-decoration:none;color:black;"> <section>screesnshot</section></a>
+            <section>|</section>
+            <a href="#id" style="text-decoration:none;color:black;"> <section>video</section></a>
+           
+       </article>
+       <article style="width:85%;margin:auto;" >
+       <input type="submit" style="padding:10px;
+       width:200px;
+       margin:auto;
+       margin-top:15px;
+       margin-bottom:15px;
+       display: block;
+       text-transform: uppercase;
+       text-align: center;
+       background-color: black;
+       color:white;
+       border-radius: 15px!important;
+       font-weight: bold;"value="send feedback">
+       </form>
+    </article>
+    </section>
+    <script type="text/javascript">
+        function purp(a){
+            if (!a.hasAttribute("class")){
+                a.style.color="#8029c1";
+                
+                a.setAttribute("class","jahnagi");
+            }
+            else{
+                a.style.color="black";
+                a.removeAttribute("class");
+
+            }
+            
+        }
+        function disp(a){
+            if (!a.hasAttribute("class")){
+               
+                document.getElementById("feed2").style.display="block";
+                a.setAttribute("class","jahnag");
+                a.parentElement.parentElement.style.display="none";
+               
+            }
+            else{
+                document.getElementById("feed2").style.display="none";
+
+                a.removeAttribute("class");
+
+            }
+        }
+        function jahnag(a){
+            if (!a.hasAttribute("class")){
+               
+               document.getElementById("feed").style.display="block";
+               a.setAttribute("class","jahnag");
+               a.parentElement.parentElement.style.display="none";
+  
+           }
+           else{
+               document.getElementById("feed").style.display="none";
+
+               a.removeAttribute("class");
+
+           }
+
+        }
+        function displ(a){
+            if (!a.hasAttribute("class")){
+                a.setAttribute("class","jahnag");
+                document.getElementById("feed").style.display="block";
+                document.getElementById("bg").style.display="block";
+
+            }
+            else{
+
+                a.removeAttribute("class");
+                document.getElementById("bg").style.display="none";
+
+                document.getElementById("feed").style.display="none";
+            }
+        }
+        function jahnagi(){
+            document.getElementById("feed").style.display="none";
+            document.getElementById("feed2").style.display="none";
+            document.getElementById("bg").style.display="none";
+
+
+        }
+    </script>

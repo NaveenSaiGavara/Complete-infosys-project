@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>CAPTURE1</title>
+	<style type="text/css">
+		#team6_n180140_div1
+		{
+			font-size:25px ;
+			background-color: white;
+			width: 500px;
+			height: 500px;
+
+		}
+		#team6_n180140_div2
+		{
+			border: 2px solid gray;
+			margin-left: 10px;
+			margin-top: 30px;
+			border-radius: 10px;
+			width: 400px;
+			height: 400px;
+
+		}
+		#team6_n180140_capture1
+		{
+			width: 380px;
+			height: 300px;
+			border: 1px solid black;
+			margin-top: 20px;
+			visibility: hidden;
+			position: relative;
+			top: -100px;
+			
+		}
+		#team6_n180140_capture2
+		{
+			width: 380px;
+			height: 300px;
+			border: 1px solid black;
+			margin-top: 20px;
+			visibility: hidden;
+			position: relative;
+			top: -730px;
+		}
+		#team6_n180140_img1
+		{
+			background-color: black;
+			visibility:hidden ;
+			height: 300px;
+			width: 380px;
+			position: relative;
+			top: -1340px;
+		}
+		#team6_n180140_img2
+		{
+			background-color: black;
+			visibility:hidden ;
+			height: 300px;
+			width: 380px;
+			position: relative;
+			top: -1640px;
+			
+		}
+		#team6_n180140_p1
+		{
+			background-color: black;
+			visibility:hidden ;
+			height: 300px;
+			width: 380px;
+			color: white;
+			/*padding-top: 50px;*/
+			position: relative;
+			top: -410px;
+		}
+		#team6_n180140_p2
+		{
+			background-color: black;
+			visibility:hidden ;
+			height: 300px;
+			width: 380px;
+			color: white;
+			position: relative;
+			top: -1040px;
+		}
+		#team6_n180140_pre{
+
+			text-align: center;
+		}
+		.team6_n180140_h5
+		{
+			margin: 5px 0px 10px 0px;
+		}
+		#team6_n180140_btn{
+			height: 50px;
+			width: 100px;
+			font-size: 20px;
+			
+		}
+		.team6_n180530:hover{
+			border: 2px dashed green;
+		}
+		#team6_n180140_btn:hover{
+			background-color: red;
+			border: 2px solid white;
+		}
+	</style>
+	<script type="text/javascript">
+		function team6_n180140_change2()
+		{
+			document.getElementById("team6_n180140_pre").style.visibility="hidden";
+			document.getElementById("team6_n180140_capture1").style.visibility="visible";
+			document.getElementById("team6_n180140_button").style.visibility="hidden";
+		}
+		function team6_n180530_change()
+		{
+			document.getElementById("team6_n180140_capture1").style.visibility="hidden";
+			document.getElementById("team6_n180140_button").style.visibility="hidden";
+			document.getElementById("team6_n180140_p1").style.visibility="visible";
+			setTimeout(team6_n180140_s1,2000);
+		}
+		var count=0;
+		function team6_n180530_done()
+		{
+			document.getElementById("team6_n180140_capture1").style.visibility="hidden";
+			document.getElementById("team6_n180140_button").style.visibility="hidden";
+			document.getElementById("team6_n180140_p1").style.visibility="visible";
+			count++;
+			setTimeout(team6_n180140_s1,2000);
+		}
+		function team6_n180140_s1()
+		{
+			document.getElementById("team6_n180140_p1").style.visibility="hidden";
+			document.getElementById("team6_n180140_capture2").style.visibility="visible";
+		}
+		function team6_n180530_change1()
+		{
+			document.getElementById("team6_n180140_capture2").style.visibility="hidden";
+			document.getElementById("team6_n180140_p2").style.visibility="visible";
+			setTimeout(team6_n180140_s2,3000);
+		}
+		function team6_n180530_done1()
+		{
+			document.getElementById("team6_n180140_capture2").style.visibility="hidden";
+			document.getElementById("team6_n180140_p2").style.visibility="visible";
+			count++;
+			setTimeout(team6_n180140_s2,3000);
+		}
+
+		function team6_n180140_s2()
+		{
+			document.getElementById("team6_n180140_p2").style.visibility="hidden";
+			if(count==2)
+			{
+			document.getElementById("team6_n180140_img1").style.visibility="visible";
+			document.getElementById("mani").style.visibility="hidden";
+			return true;
+			}
+			else if(count!=2)
+			{
+			document.getElementById("team6_n180140_img2").style.visibility="visible";
+			document.getElementById("mani").style.visibility="visible";
+			return false;
+			}	
+		}
+</script>
+</head>
+<body>
+	<center>
+	<div id="team6_n180140_div1">
+		Verify your account
+		<div id="team6_n180140_div2">
+			<p id="team6_n180140_pre">Please solve this puzzle
+			to verify that you are human<br>
+			click start puzzle to continue</p>
+			<button id="team6_n180140_button" onclick="team6_n180140_change2();">start puzzle</button>
+			<div id="team6_n180140_capture1">
+			<center><h5 class="team6_n180140_h5">select spiral galaxy</h5></center>
+			<img class="team6_n180530" src=" spiral.jpg" height="120px" width="120px" onclick="team6_n180530_done();" >
+			<img class="team6_n180530" src=" elliptical.jpg" height="120px" width="120px" onclick="team6_n180530_change();" >
+			<img class="team6_n180530" src="irregular.jpg" height="120px" width="120px" onclick="team6_n180530_change();">
+			<img class="team6_n180530" src="galaxy.jpg" height="120x" width="120px" onclick="team6_n180530_change();">
+			<img class="team6_n180530" src="galaxy2.jpg" height="120px" width="120px"onclick="team6_n180530_change();" >
+			<img class="team6_n180530" src="galaxy3.jpg" height="120px" width="120px"onclick="team6_n180530_change();"> 
+			</div>
+			<div id="team6_n180140_p1"><br><br><br><br><br>1 done</div>
+			<div id="team6_n180140_capture2">
+			<center><h5 class='team6_n180140_h5'>select spiral galaxy</h5></center>
+			<img class="team6_n180530"src="galaxy3.jpg" height="120px" width="120px" onclick="team6_n180530_change1();">
+			<img class="team6_n180530"src=" galaxy2.jpg" height="120px" width="120px" onclick="team6_n180530_change1();">
+			<img class="team6_n180530"src="galaxy.jpg" height="120px" width="120px" onclick="team6_n180530_change1();">
+			<img class="team6_n180530"src="elliptical.jpg" height="120px" width="120px" onclick="team6_n180530_change1();">
+			<img class="team6_n180530"src="spiral.jpg" height="120px" width="120px" onclick="team6_n180530_done1();">
+			<img class="team6_n180530"src="irregular.jpg" height="120px" width="120px" onclick="team6_n180530_change1();"> 
+			</div>
+			<div id="team6_n180140_p2"><br><br><br><br><br>2 done</div>
+			<div id="team6_n180140_img1" ><img src="right.png" height="100px" width="100px" style="margin-left:10px; margin-top: 80px;"></div>
+			<div id="team6_n180140_img2"><img src="wrong.png" height="100px" width="100px" style="margin-left:10px; margin-top: 80px;"><br><br><a href=''><button id='team6_n180140_btn' >Try Again</button></a></div>
+		</div>
+	</div>
+	<center>
+</body>
+</html>
